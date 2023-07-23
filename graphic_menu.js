@@ -627,17 +627,31 @@ if (reversed == null) { reversed = false; }
 	this.frame_0 = function() {
 		this.stop();
 	}
+	this.frame_19 = function() {
+		this.stop();
+	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(20));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(19).call(this.frame_19).wait(21));
 
 	// Calque_1
 	this.instance = new lib.webolfly_btn();
 	this.instance.setTransform(-18.8,-48.5,1,1,0,0,0,-17.8,-48.5);
+	var instanceFilter_1 = new cjs.ColorFilter(1,1,1,1,0,0,0,0);
+	this.instance.filters = [instanceFilter_1];
+	this.instance.cache(-63,-64,125,128);
 	new cjs.ButtonHelper(this.instance, 0, 1, 1);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({regX:-17.7,rotation:-3.4957,x:-18.7,y:-48.45},4).to({regX:-17.8,regY:-48.4,rotation:10.9631,x:-18.85,y:-48.55},5).to({regX:-17.7,regY:-48.5,rotation:-6.9907,y:-48.6},5).to({regX:-17.8,rotation:0,x:-18.8,y:-48.5},5).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({regX:-17.7,rotation:-3.4957,x:-18.7,y:-48.45},4).to({regX:-17.8,regY:-48.4,rotation:10.9631,x:-18.85,y:-48.55},5).to({regX:-17.7,regY:-48.5,rotation:-6.9907,y:-48.6},5).to({regX:-17.8,rotation:0,x:-18.8,y:-48.5},5).wait(21));
+	this.timeline.addTween(cjs.Tween.get(instanceFilter_1).to(new cjs.ColorFilter(0.95,0.95,0.95,1,12.75,12.75,12.75,0), 4).to(new cjs.ColorFilter(0.9,0.9,0.9,1,25.5,25.5,25.5,0), 5).to(new cjs.ColorFilter(0.85,0.85,0.85,1,38.25,38.25,38.25,0), 5).to(new cjs.ColorFilter(0.8,0.8,0.8,1,51,51,51,0), 5).to(new cjs.ColorFilter(1,1,1,1,0,0,0,0), 20).wait(1));
 
+	this.filterCacheList = [];
+	this.filterCacheList.push({instance: this.instance, startFrame:1, endFrame:4, x:-63, y:-64, w:125, h:128});
+	this.filterCacheList.push({instance: this.instance, startFrame:0, endFrame:0, x:-63, y:-64, w:125, h:128});
+	this.filterCacheList.push({instance: this.instance, startFrame:5, endFrame:9, x:-63, y:-64, w:125, h:128});
+	this.filterCacheList.push({instance: this.instance, startFrame:10, endFrame:14, x:-63, y:-64, w:125, h:128});
+	this.filterCacheList.push({instance: this.instance, startFrame:15, endFrame:19, x:-63, y:-64, w:125, h:128});
+	this.filterCacheList.push({instance: this.instance, startFrame:20, endFrame:39, x:-63, y:-64, w:125, h:128});
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
@@ -659,17 +673,31 @@ if (reversed == null) { reversed = false; }
 	this.frame_0 = function() {
 		this.stop();
 	}
+	this.frame_19 = function() {
+		this.stop();
+	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(20));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(19).call(this.frame_19).wait(21));
 
 	// Calque_1
 	this.instance = new lib.tvmix_btn();
 	this.instance.setTransform(-26.5,-38.5,1,1,0,0,0,-25.5,-38.5);
+	var instanceFilter_1 = new cjs.ColorFilter(1,1,1,1,0,0,0,0);
+	this.instance.filters = [instanceFilter_1];
+	this.instance.cache(-61,-61,121,121);
 	new cjs.ButtonHelper(this.instance, 0, 1, 1);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({regY:-38.6,rotation:-2.9695,y:-38.6},4).to({rotation:8.2555,x:-26.55},5).to({rotation:-4.1968,x:-26.6},5).to({regY:-38.5,rotation:0,x:-26.5,y:-38.5},5).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({regY:-38.6,rotation:-2.9695,y:-38.6},4).to({rotation:8.2555,x:-26.55},5).to({rotation:-4.1968,x:-26.6},5).to({regY:-38.5,rotation:0,x:-26.5,y:-38.5},5).wait(21));
+	this.timeline.addTween(cjs.Tween.get(instanceFilter_1).to(new cjs.ColorFilter(0.95,0.95,0.95,1,12.75,12.75,12.75,0), 4).to(new cjs.ColorFilter(0.9,0.9,0.9,1,25.5,25.5,25.5,0), 5).to(new cjs.ColorFilter(0.85,0.85,0.85,1,38.25,38.25,38.25,0), 5).to(new cjs.ColorFilter(0.8,0.8,0.8,1,51,51,51,0), 5).to(new cjs.ColorFilter(1,1,1,1,0,0,0,0), 20).wait(1));
 
+	this.filterCacheList = [];
+	this.filterCacheList.push({instance: this.instance, startFrame:1, endFrame:4, x:-61, y:-61, w:121, h:121});
+	this.filterCacheList.push({instance: this.instance, startFrame:0, endFrame:0, x:-61, y:-61, w:121, h:121});
+	this.filterCacheList.push({instance: this.instance, startFrame:5, endFrame:9, x:-61, y:-61, w:121, h:121});
+	this.filterCacheList.push({instance: this.instance, startFrame:10, endFrame:14, x:-61, y:-61, w:121, h:121});
+	this.filterCacheList.push({instance: this.instance, startFrame:15, endFrame:19, x:-61, y:-61, w:121, h:121});
+	this.filterCacheList.push({instance: this.instance, startFrame:20, endFrame:39, x:-61, y:-61, w:121, h:121});
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
@@ -691,17 +719,31 @@ if (reversed == null) { reversed = false; }
 	this.frame_0 = function() {
 		this.stop();
 	}
+	this.frame_19 = function() {
+		this.stop();
+	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(20));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(19).call(this.frame_19).wait(21));
 
 	// Calque_1
 	this.instance = new lib.tibabiolabs_btn();
 	this.instance.setTransform(-4.8,-46,1,1,0,0,0,-3.8,-46);
+	var instanceFilter_1 = new cjs.ColorFilter(1,1,1,1,0,0,0,0);
+	this.instance.filters = [instanceFilter_1];
+	this.instance.cache(-60,-61,119,122);
 	new cjs.ButtonHelper(this.instance, 0, 1, 1);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({regX:-3.6,regY:-46.1,rotation:-4.7888,x:-4.7,y:-46.15},4).to({regX:-3.7,rotation:10.955,x:-4.75,y:-46.1},5).to({rotation:-4.9838,x:-4.85,y:-46.2},5).to({regX:-3.8,regY:-46,rotation:0,x:-4.8,y:-46},5).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({regX:-3.6,regY:-46.1,rotation:-4.7888,x:-4.7,y:-46.15},4).to({regX:-3.7,rotation:10.955,x:-4.75,y:-46.1},5).to({rotation:-4.9838,x:-4.85,y:-46.2},5).to({regX:-3.8,regY:-46,rotation:0,x:-4.8,y:-46},5).wait(21));
+	this.timeline.addTween(cjs.Tween.get(instanceFilter_1).to(new cjs.ColorFilter(0.95,0.95,0.95,1,12.75,12.75,12.75,0), 4).to(new cjs.ColorFilter(0.9,0.9,0.9,1,25.5,25.5,25.5,0), 5).to(new cjs.ColorFilter(0.85,0.85,0.85,1,38.25,38.25,38.25,0), 5).to(new cjs.ColorFilter(0.8,0.8,0.8,1,51,51,51,0), 5).to(new cjs.ColorFilter(1,1,1,1,0,0,0,0), 20).wait(1));
 
+	this.filterCacheList = [];
+	this.filterCacheList.push({instance: this.instance, startFrame:1, endFrame:4, x:-60, y:-61, w:119, h:122});
+	this.filterCacheList.push({instance: this.instance, startFrame:0, endFrame:0, x:-60, y:-61, w:119, h:122});
+	this.filterCacheList.push({instance: this.instance, startFrame:5, endFrame:9, x:-60, y:-61, w:119, h:122});
+	this.filterCacheList.push({instance: this.instance, startFrame:10, endFrame:14, x:-60, y:-61, w:119, h:122});
+	this.filterCacheList.push({instance: this.instance, startFrame:15, endFrame:19, x:-60, y:-61, w:119, h:122});
+	this.filterCacheList.push({instance: this.instance, startFrame:20, endFrame:39, x:-60, y:-61, w:119, h:122});
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
@@ -723,17 +765,31 @@ if (reversed == null) { reversed = false; }
 	this.frame_0 = function() {
 		this.stop();
 	}
+	this.frame_19 = function() {
+		this.stop();
+	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(20));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(19).call(this.frame_19).wait(21));
 
 	// Calque_1
 	this.instance = new lib.tapetum_btn();
 	this.instance.setTransform(-4.8,-46,1,1,0,0,0,-3.8,-46);
+	var instanceFilter_1 = new cjs.ColorFilter(1,1,1,1,0,0,0,0);
+	this.instance.filters = [instanceFilter_1];
+	this.instance.cache(-55,-58,109,115);
 	new cjs.ButtonHelper(this.instance, 0, 1, 1);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({regX:-3.6,regY:-46.1,rotation:-4.7888,x:-4.7,y:-46.15},4).to({regX:-3.7,rotation:10.955,x:-4.75,y:-46.1},5).to({rotation:-4.9838,x:-4.85,y:-46.2},5).to({regX:-3.8,regY:-46,rotation:0,x:-4.8,y:-46},5).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({regX:-3.6,regY:-46.1,rotation:-4.7888,x:-4.7,y:-46.15},4).to({regX:-3.7,rotation:10.955,x:-4.75,y:-46.1},5).to({rotation:-4.9838,x:-4.85,y:-46.2},5).to({regX:-3.8,regY:-46,rotation:0,x:-4.8,y:-46},5).wait(21));
+	this.timeline.addTween(cjs.Tween.get(instanceFilter_1).to(new cjs.ColorFilter(0.95,0.95,0.95,1,12.75,12.75,12.75,0), 4).to(new cjs.ColorFilter(0.9,0.9,0.9,1,25.5,25.5,25.5,0), 5).to(new cjs.ColorFilter(0.85,0.85,0.85,1,38.25,38.25,38.25,0), 5).to(new cjs.ColorFilter(0.8,0.8,0.8,1,51,51,51,0), 5).to(new cjs.ColorFilter(1,1,1,1,0,0,0,0), 20).wait(1));
 
+	this.filterCacheList = [];
+	this.filterCacheList.push({instance: this.instance, startFrame:1, endFrame:4, x:-55, y:-58, w:109, h:115});
+	this.filterCacheList.push({instance: this.instance, startFrame:0, endFrame:0, x:-55, y:-58, w:109, h:115});
+	this.filterCacheList.push({instance: this.instance, startFrame:5, endFrame:9, x:-55, y:-58, w:109, h:115});
+	this.filterCacheList.push({instance: this.instance, startFrame:10, endFrame:14, x:-55, y:-58, w:109, h:115});
+	this.filterCacheList.push({instance: this.instance, startFrame:15, endFrame:19, x:-55, y:-58, w:109, h:115});
+	this.filterCacheList.push({instance: this.instance, startFrame:20, endFrame:39, x:-55, y:-58, w:109, h:115});
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
@@ -755,17 +811,31 @@ if (reversed == null) { reversed = false; }
 	this.frame_0 = function() {
 		this.stop();
 	}
+	this.frame_19 = function() {
+		this.stop();
+	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(20));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(19).call(this.frame_19).wait(21));
 
 	// Calque_1
 	this.instance = new lib.resicover_btn();
 	this.instance.setTransform(-4.8,-46,1,1,0,0,0,-3.8,-46);
+	var instanceFilter_1 = new cjs.ColorFilter(1,1,1,1,0,0,0,0);
+	this.instance.filters = [instanceFilter_1];
+	this.instance.cache(-58,-57,115,114);
 	new cjs.ButtonHelper(this.instance, 0, 1, 1);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({regX:-3.6,regY:-46.1,rotation:-4.7888,x:-4.7,y:-46.15},4).to({regX:-3.7,rotation:10.955,x:-4.75,y:-46.1},5).to({rotation:-4.9838,x:-4.85,y:-46.2},5).to({regX:-3.8,regY:-46,rotation:0,x:-4.8,y:-46},5).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({regX:-3.6,regY:-46.1,rotation:-4.7888,x:-4.7,y:-46.15},4).to({regX:-3.7,rotation:10.955,x:-4.75,y:-46.1},5).to({rotation:-4.9838,x:-4.85,y:-46.2},5).to({regX:-3.8,regY:-46,rotation:0,x:-4.8,y:-46},5).wait(21));
+	this.timeline.addTween(cjs.Tween.get(instanceFilter_1).to(new cjs.ColorFilter(0.95,0.95,0.95,1,12.75,12.75,12.75,0), 4).to(new cjs.ColorFilter(0.9,0.9,0.9,1,25.5,25.5,25.5,0), 5).to(new cjs.ColorFilter(0.85,0.85,0.85,1,38.25,38.25,38.25,0), 5).to(new cjs.ColorFilter(0.8,0.8,0.8,1,51,51,51,0), 5).to(new cjs.ColorFilter(1,1,1,1,0,0,0,0), 20).wait(1));
 
+	this.filterCacheList = [];
+	this.filterCacheList.push({instance: this.instance, startFrame:1, endFrame:4, x:-58, y:-57, w:115, h:114});
+	this.filterCacheList.push({instance: this.instance, startFrame:0, endFrame:0, x:-58, y:-57, w:115, h:114});
+	this.filterCacheList.push({instance: this.instance, startFrame:5, endFrame:9, x:-58, y:-57, w:115, h:114});
+	this.filterCacheList.push({instance: this.instance, startFrame:10, endFrame:14, x:-58, y:-57, w:115, h:114});
+	this.filterCacheList.push({instance: this.instance, startFrame:15, endFrame:19, x:-58, y:-57, w:115, h:114});
+	this.filterCacheList.push({instance: this.instance, startFrame:20, endFrame:39, x:-58, y:-57, w:115, h:114});
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
@@ -787,17 +857,31 @@ if (reversed == null) { reversed = false; }
 	this.frame_0 = function() {
 		this.stop();
 	}
+	this.frame_19 = function() {
+		this.stop();
+	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(20));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(19).call(this.frame_19).wait(21));
 
 	// Calque_1
 	this.instance = new lib.president_btn();
 	this.instance.setTransform(16.2,-44,1,1,0,0,0,17.2,-44);
+	var instanceFilter_1 = new cjs.ColorFilter(1,1,1,1,0,0,0,0);
+	this.instance.filters = [instanceFilter_1];
+	this.instance.cache(-57,-57,114,114);
 	new cjs.ButtonHelper(this.instance, 0, 1, 1);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({rotation:-2.7226,x:16.25,y:-44.05},4).to({regY:-44.1,rotation:8.9939,x:16.4,y:-44.15},5).to({regY:-44,rotation:-3.4582,x:16.35,y:-44.25},5).to({rotation:0,x:16.2,y:-44},5).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({rotation:-2.7226,x:16.25,y:-44.05},4).to({regY:-44.1,rotation:8.9939,x:16.4,y:-44.15},5).to({regY:-44,rotation:-3.4582,x:16.35,y:-44.25},5).to({rotation:0,x:16.2,y:-44},5).wait(21));
+	this.timeline.addTween(cjs.Tween.get(instanceFilter_1).to(new cjs.ColorFilter(0.95,0.95,0.95,1,12.75,12.75,12.75,0), 4).to(new cjs.ColorFilter(0.9,0.9,0.9,1,25.5,25.5,25.5,0), 5).to(new cjs.ColorFilter(0.85,0.85,0.85,1,38.25,38.25,38.25,0), 5).to(new cjs.ColorFilter(0.8,0.8,0.8,1,51,51,51,0), 5).to(new cjs.ColorFilter(1,1,1,1,0,0,0,0), 20).wait(1));
 
+	this.filterCacheList = [];
+	this.filterCacheList.push({instance: this.instance, startFrame:1, endFrame:4, x:-57, y:-57, w:114, h:114});
+	this.filterCacheList.push({instance: this.instance, startFrame:0, endFrame:0, x:-57, y:-57, w:114, h:114});
+	this.filterCacheList.push({instance: this.instance, startFrame:5, endFrame:9, x:-57, y:-57, w:114, h:114});
+	this.filterCacheList.push({instance: this.instance, startFrame:10, endFrame:14, x:-57, y:-57, w:114, h:114});
+	this.filterCacheList.push({instance: this.instance, startFrame:15, endFrame:19, x:-57, y:-57, w:114, h:114});
+	this.filterCacheList.push({instance: this.instance, startFrame:20, endFrame:39, x:-57, y:-57, w:114, h:114});
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
@@ -819,17 +903,31 @@ if (reversed == null) { reversed = false; }
 	this.frame_0 = function() {
 		this.stop();
 	}
+	this.frame_19 = function() {
+		this.stop();
+	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(20));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(19).call(this.frame_19).wait(21));
 
 	// Calque_1
 	this.instance = new lib.postetn_btn();
 	this.instance.setTransform(2.2,-44,1,1,0,0,0,3.2,-44);
+	var instanceFilter_1 = new cjs.ColorFilter(1,1,1,1,0,0,0,0);
+	this.instance.filters = [instanceFilter_1];
+	this.instance.cache(-58,-58,116,115);
 	new cjs.ButtonHelper(this.instance, 0, 1, 1);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({regY:-44.1,rotation:3.9539,x:2.3,y:-44.15},4).to({rotation:-11.0449,x:2.2},5).to({regX:3.1,rotation:3.4179,x:2.25,y:-44.05},5).to({regX:3.2,regY:-44,rotation:0,x:2.2,y:-44},5).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({regY:-44.1,rotation:3.9539,x:2.3,y:-44.15},4).to({rotation:-11.0449,x:2.2},5).to({regX:3.1,rotation:3.4179,x:2.25,y:-44.05},5).to({regX:3.2,regY:-44,rotation:0,x:2.2,y:-44},5).wait(21));
+	this.timeline.addTween(cjs.Tween.get(instanceFilter_1).to(new cjs.ColorFilter(0.95,0.95,0.95,1,12.75,12.75,12.75,0), 4).to(new cjs.ColorFilter(0.9,0.9,0.9,1,25.5,25.5,25.5,0), 5).to(new cjs.ColorFilter(0.85,0.85,0.85,1,38.25,38.25,38.25,0), 5).to(new cjs.ColorFilter(0.8,0.8,0.8,1,51,51,51,0), 5).to(new cjs.ColorFilter(1,1,1,1,0,0,0,0), 20).wait(1));
 
+	this.filterCacheList = [];
+	this.filterCacheList.push({instance: this.instance, startFrame:1, endFrame:4, x:-58, y:-58, w:116, h:115});
+	this.filterCacheList.push({instance: this.instance, startFrame:0, endFrame:0, x:-58, y:-58, w:116, h:115});
+	this.filterCacheList.push({instance: this.instance, startFrame:5, endFrame:9, x:-58, y:-58, w:116, h:115});
+	this.filterCacheList.push({instance: this.instance, startFrame:10, endFrame:14, x:-58, y:-58, w:116, h:115});
+	this.filterCacheList.push({instance: this.instance, startFrame:15, endFrame:19, x:-58, y:-58, w:116, h:115});
+	this.filterCacheList.push({instance: this.instance, startFrame:20, endFrame:39, x:-58, y:-58, w:116, h:115});
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
@@ -851,17 +949,31 @@ if (reversed == null) { reversed = false; }
 	this.frame_0 = function() {
 		this.stop();
 	}
+	this.frame_19 = function() {
+		this.stop();
+	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(20));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(19).call(this.frame_19).wait(21));
 
 	// Calque_1
 	this.instance = new lib.pnud_btn();
 	this.instance.setTransform(2,-50.8,1,1,0,0,0,3,-50.8);
+	var instanceFilter_1 = new cjs.ColorFilter(1,1,1,1,0,0,0,0);
+	this.instance.filters = [instanceFilter_1];
+	this.instance.cache(-60,-61,119,122);
 	new cjs.ButtonHelper(this.instance, 0, 1, 1);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({regY:-50.7,rotation:-3.212,x:1.95,y:-50.7},4).to({rotation:4.7247,x:2.05,y:-50.8},5).to({regX:3.1,regY:-50.6,rotation:-8.0365,x:2.1,y:-50.75},5).to({regX:3,regY:-50.8,rotation:0,x:2,y:-50.8},5).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({regY:-50.7,rotation:-3.212,x:1.95,y:-50.7},4).to({rotation:4.7247,x:2.05,y:-50.8},5).to({regX:3.1,regY:-50.6,rotation:-8.0365,x:2.1,y:-50.75},5).to({regX:3,regY:-50.8,rotation:0,x:2,y:-50.8},5).wait(21));
+	this.timeline.addTween(cjs.Tween.get(instanceFilter_1).to(new cjs.ColorFilter(0.95,0.95,0.95,1,12.75,12.75,12.75,0), 4).to(new cjs.ColorFilter(0.9,0.9,0.9,1,25.5,25.5,25.5,0), 5).to(new cjs.ColorFilter(0.85,0.85,0.85,1,38.25,38.25,38.25,0), 5).to(new cjs.ColorFilter(0.8,0.8,0.8,1,51,51,51,0), 5).to(new cjs.ColorFilter(1,1,1,1,0,0,0,0), 20).wait(1));
 
+	this.filterCacheList = [];
+	this.filterCacheList.push({instance: this.instance, startFrame:1, endFrame:4, x:-60, y:-61, w:119, h:122});
+	this.filterCacheList.push({instance: this.instance, startFrame:0, endFrame:0, x:-60, y:-61, w:119, h:122});
+	this.filterCacheList.push({instance: this.instance, startFrame:5, endFrame:9, x:-60, y:-61, w:119, h:122});
+	this.filterCacheList.push({instance: this.instance, startFrame:10, endFrame:14, x:-60, y:-61, w:119, h:122});
+	this.filterCacheList.push({instance: this.instance, startFrame:15, endFrame:19, x:-60, y:-61, w:119, h:122});
+	this.filterCacheList.push({instance: this.instance, startFrame:20, endFrame:39, x:-60, y:-61, w:119, h:122});
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
@@ -883,17 +995,31 @@ if (reversed == null) { reversed = false; }
 	this.frame_0 = function() {
 		this.stop();
 	}
+	this.frame_19 = function() {
+		this.stop();
+	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(20));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(19).call(this.frame_19).wait(21));
 
 	// Calque_1
 	this.instance = new lib.medpub_btn();
 	this.instance.setTransform(-4.8,-46,1,1,0,0,0,-3.8,-46);
+	var instanceFilter_1 = new cjs.ColorFilter(1,1,1,1,0,0,0,0);
+	this.instance.filters = [instanceFilter_1];
+	this.instance.cache(-57,-61,114,121);
 	new cjs.ButtonHelper(this.instance, 0, 1, 1);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({regX:-3.6,regY:-46.1,rotation:-4.7888,x:-4.7,y:-46.15},4).to({regX:-3.7,rotation:10.955,x:-4.75,y:-46.1},5).to({rotation:-4.9838,x:-4.85,y:-46.2},5).to({regX:-3.8,regY:-46,rotation:0,x:-4.8,y:-46},5).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({regX:-3.6,regY:-46.1,rotation:-4.7888,x:-4.7,y:-46.15},4).to({regX:-3.7,rotation:10.955,x:-4.75,y:-46.1},5).to({rotation:-4.9838,x:-4.85,y:-46.2},5).to({regX:-3.8,regY:-46,rotation:0,x:-4.8,y:-46},5).wait(21));
+	this.timeline.addTween(cjs.Tween.get(instanceFilter_1).to(new cjs.ColorFilter(0.95,0.95,0.95,1,12.75,12.75,12.75,0), 4).to(new cjs.ColorFilter(0.9,0.9,0.9,1,25.5,25.5,25.5,0), 5).to(new cjs.ColorFilter(0.85,0.85,0.85,1,38.25,38.25,38.25,0), 5).to(new cjs.ColorFilter(0.8,0.8,0.8,1,51,51,51,0), 5).to(new cjs.ColorFilter(1,1,1,1,0,0,0,0), 20).wait(1));
 
+	this.filterCacheList = [];
+	this.filterCacheList.push({instance: this.instance, startFrame:1, endFrame:4, x:-57, y:-61, w:114, h:121});
+	this.filterCacheList.push({instance: this.instance, startFrame:0, endFrame:0, x:-57, y:-61, w:114, h:121});
+	this.filterCacheList.push({instance: this.instance, startFrame:5, endFrame:9, x:-57, y:-61, w:114, h:121});
+	this.filterCacheList.push({instance: this.instance, startFrame:10, endFrame:14, x:-57, y:-61, w:114, h:121});
+	this.filterCacheList.push({instance: this.instance, startFrame:15, endFrame:19, x:-57, y:-61, w:114, h:121});
+	this.filterCacheList.push({instance: this.instance, startFrame:20, endFrame:39, x:-57, y:-61, w:114, h:121});
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
@@ -915,17 +1041,31 @@ if (reversed == null) { reversed = false; }
 	this.frame_0 = function() {
 		this.stop();
 	}
+	this.frame_19 = function() {
+		this.stop();
+	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(20));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(19).call(this.frame_19).wait(21));
 
 	// Calque_1
 	this.instance = new lib.mc_btn();
 	this.instance.setTransform(-4.8,-46,1,1,0,0,0,-3.8,-46);
+	var instanceFilter_1 = new cjs.ColorFilter(1,1,1,1,0,0,0,0);
+	this.instance.filters = [instanceFilter_1];
+	this.instance.cache(-61,-63,122,126);
 	new cjs.ButtonHelper(this.instance, 0, 1, 1);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({regX:-3.6,regY:-46.1,rotation:-4.7888,x:-4.7,y:-46.15},4).to({regX:-3.7,rotation:10.955,x:-4.75,y:-46.1},5).to({rotation:-4.9838,x:-4.85,y:-46.2},5).to({regX:-3.8,regY:-46,rotation:0,x:-4.8,y:-46},5).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({regX:-3.6,regY:-46.1,rotation:-4.7888,x:-4.7,y:-46.15},4).to({regX:-3.7,rotation:10.955,x:-4.75,y:-46.1},5).to({rotation:-4.9838,x:-4.85,y:-46.2},5).to({regX:-3.8,regY:-46,rotation:0,x:-4.8,y:-46},5).wait(21));
+	this.timeline.addTween(cjs.Tween.get(instanceFilter_1).to(new cjs.ColorFilter(0.95,0.95,0.95,1,12.75,12.75,12.75,0), 4).to(new cjs.ColorFilter(0.9,0.9,0.9,1,25.5,25.5,25.5,0), 5).to(new cjs.ColorFilter(0.85,0.85,0.85,1,38.25,38.25,38.25,0), 5).to(new cjs.ColorFilter(0.8,0.8,0.8,1,51,51,51,0), 5).to(new cjs.ColorFilter(1,1,1,1,0,0,0,0), 20).wait(1));
 
+	this.filterCacheList = [];
+	this.filterCacheList.push({instance: this.instance, startFrame:1, endFrame:4, x:-61, y:-63, w:122, h:126});
+	this.filterCacheList.push({instance: this.instance, startFrame:0, endFrame:0, x:-61, y:-63, w:122, h:126});
+	this.filterCacheList.push({instance: this.instance, startFrame:5, endFrame:9, x:-61, y:-63, w:122, h:126});
+	this.filterCacheList.push({instance: this.instance, startFrame:10, endFrame:14, x:-61, y:-63, w:122, h:126});
+	this.filterCacheList.push({instance: this.instance, startFrame:15, endFrame:19, x:-61, y:-63, w:122, h:126});
+	this.filterCacheList.push({instance: this.instance, startFrame:20, endFrame:39, x:-61, y:-63, w:122, h:126});
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
@@ -947,17 +1087,31 @@ if (reversed == null) { reversed = false; }
 	this.frame_0 = function() {
 		this.stop();
 	}
+	this.frame_19 = function() {
+		this.stop();
+	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(20));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(19).call(this.frame_19).wait(21));
 
 	// Calque_1
 	this.instance = new lib.macbeth_btn();
 	this.instance.setTransform(4.2,-46,1,1,0,0,0,5.2,-46);
+	var instanceFilter_1 = new cjs.ColorFilter(1,1,1,1,0,0,0,0);
+	this.instance.filters = [instanceFilter_1];
+	this.instance.cache(-54,-56,108,111);
 	new cjs.ButtonHelper(this.instance, 0, 1, 1);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({regY:-46.1,rotation:-3.2277,y:-46.15},4).to({rotation:7.7346,x:4.25},5).to({rotation:-2.216,x:4.2,y:-46.2},5).to({regY:-46,rotation:0,y:-46},5).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({regY:-46.1,rotation:-3.2277,y:-46.15},4).to({rotation:7.7346,x:4.25},5).to({rotation:-2.216,x:4.2,y:-46.2},5).to({regY:-46,rotation:0,y:-46},5).wait(21));
+	this.timeline.addTween(cjs.Tween.get(instanceFilter_1).to(new cjs.ColorFilter(0.95,0.95,0.95,1,12.75,12.75,12.75,0), 4).to(new cjs.ColorFilter(0.9,0.9,0.9,1,25.5,25.5,25.5,0), 5).to(new cjs.ColorFilter(0.85,0.85,0.85,1,38.25,38.25,38.25,0), 5).to(new cjs.ColorFilter(0.8,0.8,0.8,1,51,51,51,0), 5).to(new cjs.ColorFilter(1,1,1,1,0,0,0,0), 20).wait(1));
 
+	this.filterCacheList = [];
+	this.filterCacheList.push({instance: this.instance, startFrame:1, endFrame:4, x:-54, y:-56, w:108, h:111});
+	this.filterCacheList.push({instance: this.instance, startFrame:0, endFrame:0, x:-54, y:-56, w:108, h:111});
+	this.filterCacheList.push({instance: this.instance, startFrame:5, endFrame:9, x:-54, y:-56, w:108, h:111});
+	this.filterCacheList.push({instance: this.instance, startFrame:10, endFrame:14, x:-54, y:-56, w:108, h:111});
+	this.filterCacheList.push({instance: this.instance, startFrame:15, endFrame:19, x:-54, y:-56, w:108, h:111});
+	this.filterCacheList.push({instance: this.instance, startFrame:20, endFrame:39, x:-54, y:-56, w:108, h:111});
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
@@ -979,17 +1133,31 @@ if (reversed == null) { reversed = false; }
 	this.frame_0 = function() {
 		this.stop();
 	}
+	this.frame_19 = function() {
+		this.stop();
+	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(20));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(19).call(this.frame_19).wait(21));
 
 	// Calque_1
 	this.instance = new lib.japanexpo_btn();
 	this.instance.setTransform(13.5,-43.5,1,1,0,0,0,14.5,-43.5);
+	var instanceFilter_1 = new cjs.ColorFilter(1,1,1,1,0,0,0,0);
+	this.instance.filters = [instanceFilter_1];
+	this.instance.cache(-58,-56,116,111);
 	new cjs.ButtonHelper(this.instance, 0, 1, 1);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({rotation:-6.4667,y:-43.55},4).to({rotation:8.5321,x:13.6},5).to({regY:-43.4,rotation:-11.6846,x:13.5,y:-43.6},5).to({regY:-43.5,rotation:0,y:-43.5},5,cjs.Ease.quadOut).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({rotation:-6.4667,y:-43.55},4).to({rotation:8.5321,x:13.6},5).to({regY:-43.4,rotation:-11.6846,x:13.5,y:-43.6},5).to({regY:-43.5,rotation:0,y:-43.5},5,cjs.Ease.quadOut).wait(21));
+	this.timeline.addTween(cjs.Tween.get(instanceFilter_1).to(new cjs.ColorFilter(0.95,0.95,0.95,1,12.75,12.75,12.75,0), 4).to(new cjs.ColorFilter(0.9,0.9,0.9,1,25.5,25.5,25.5,0), 5).to(new cjs.ColorFilter(0.85,0.85,0.85,1,38.25,38.25,38.25,0), 5).to(new cjs.ColorFilter(0.8,0.8,0.8,1,51,51,51,0), 5,cjs.Ease.quadOut).to(new cjs.ColorFilter(1,1,1,1,0,0,0,0), 20).wait(1));
 
+	this.filterCacheList = [];
+	this.filterCacheList.push({instance: this.instance, startFrame:1, endFrame:4, x:-58, y:-56, w:116, h:111});
+	this.filterCacheList.push({instance: this.instance, startFrame:0, endFrame:0, x:-58, y:-56, w:116, h:111});
+	this.filterCacheList.push({instance: this.instance, startFrame:5, endFrame:9, x:-58, y:-56, w:116, h:111});
+	this.filterCacheList.push({instance: this.instance, startFrame:10, endFrame:14, x:-58, y:-56, w:116, h:111});
+	this.filterCacheList.push({instance: this.instance, startFrame:15, endFrame:19, x:-58, y:-56, w:116, h:111});
+	this.filterCacheList.push({instance: this.instance, startFrame:20, endFrame:39, x:-58, y:-56, w:116, h:111});
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
@@ -1011,17 +1179,31 @@ if (reversed == null) { reversed = false; }
 	this.frame_0 = function() {
 		this.stop();
 	}
+	this.frame_19 = function() {
+		this.stop();
+	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(20));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(19).call(this.frame_19).wait(21));
 
 	// Calque_1
 	this.instance = new lib.healthmeup_btn();
 	this.instance.setTransform(5.2,-49.2,1,1,0,0,0,6.2,-49.2);
+	var instanceFilter_1 = new cjs.ColorFilter(1,1,1,1,0,0,0,0);
+	this.instance.filters = [instanceFilter_1];
+	this.instance.cache(-57,-61,113,121);
 	new cjs.ButtonHelper(this.instance, 0, 1, 1);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({rotation:3.7454,x:5.25},4).to({rotation:-6.7519,x:5.2,y:-49.25},5).to({regY:-49.3,rotation:5.9576,x:5.25,y:-49.35},5).to({regY:-49.2,rotation:0,x:5.2,y:-49.2},5,cjs.Ease.quadOut).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({rotation:3.7454,x:5.25},4).to({rotation:-6.7519,x:5.2,y:-49.25},5).to({regY:-49.3,rotation:5.9576,x:5.25,y:-49.35},5).to({regY:-49.2,rotation:0,x:5.2,y:-49.2},5,cjs.Ease.quadOut).wait(21));
+	this.timeline.addTween(cjs.Tween.get(instanceFilter_1).to(new cjs.ColorFilter(0.95,0.95,0.95,1,12.75,12.75,12.75,0), 4).to(new cjs.ColorFilter(0.9,0.9,0.9,1,25.5,25.5,25.5,0), 5).to(new cjs.ColorFilter(0.85,0.85,0.85,1,38.25,38.25,38.25,0), 5).to(new cjs.ColorFilter(0.8,0.8,0.8,1,51,51,51,0), 5,cjs.Ease.quadOut).to(new cjs.ColorFilter(1,1,1,1,0,0,0,0), 20).wait(1));
 
+	this.filterCacheList = [];
+	this.filterCacheList.push({instance: this.instance, startFrame:1, endFrame:4, x:-57, y:-61, w:113, h:121});
+	this.filterCacheList.push({instance: this.instance, startFrame:0, endFrame:0, x:-57, y:-61, w:113, h:121});
+	this.filterCacheList.push({instance: this.instance, startFrame:5, endFrame:9, x:-57, y:-61, w:113, h:121});
+	this.filterCacheList.push({instance: this.instance, startFrame:10, endFrame:14, x:-57, y:-61, w:113, h:121});
+	this.filterCacheList.push({instance: this.instance, startFrame:15, endFrame:19, x:-57, y:-61, w:113, h:121});
+	this.filterCacheList.push({instance: this.instance, startFrame:20, endFrame:39, x:-57, y:-61, w:113, h:121});
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
@@ -1043,17 +1225,31 @@ if (reversed == null) { reversed = false; }
 	this.frame_0 = function() {
 		this.stop();
 	}
+	this.frame_19 = function() {
+		this.stop();
+	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(20));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(19).call(this.frame_19).wait(21));
 
 	// Calque_1
 	this.instance = new lib.freeshprod_btn();
 	this.instance.setTransform(-4.8,-46,1,1,0,0,0,-3.8,-46);
+	var instanceFilter_1 = new cjs.ColorFilter(1,1,1,1,0,0,0,0);
+	this.instance.filters = [instanceFilter_1];
+	this.instance.cache(-54,-56,108,112);
 	new cjs.ButtonHelper(this.instance, 0, 1, 1);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({regX:-3.6,regY:-46.1,rotation:-4.7888,x:-4.7,y:-46.15},4).to({regX:-3.7,rotation:10.955,x:-4.75,y:-46.1},5).to({rotation:-4.9838,x:-4.85,y:-46.2},5).to({regX:-3.8,regY:-46,rotation:0,x:-4.8,y:-46},5).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({regX:-3.6,regY:-46.1,rotation:-4.7888,x:-4.7,y:-46.15},4).to({regX:-3.7,rotation:10.955,x:-4.75,y:-46.1},5).to({rotation:-4.9838,x:-4.85,y:-46.2},5).to({regX:-3.8,regY:-46,rotation:0,x:-4.8,y:-46},5).wait(21));
+	this.timeline.addTween(cjs.Tween.get(instanceFilter_1).to(new cjs.ColorFilter(0.95,0.95,0.95,1,12.75,12.75,12.75,0), 4).to(new cjs.ColorFilter(0.9,0.9,0.9,1,25.5,25.5,25.5,0), 5).to(new cjs.ColorFilter(0.85,0.85,0.85,1,38.25,38.25,38.25,0), 5).to(new cjs.ColorFilter(0.8,0.8,0.8,1,51,51,51,0), 5).to(new cjs.ColorFilter(1,1,1,1,0,0,0,0), 20).wait(1));
 
+	this.filterCacheList = [];
+	this.filterCacheList.push({instance: this.instance, startFrame:1, endFrame:4, x:-54, y:-56, w:108, h:112});
+	this.filterCacheList.push({instance: this.instance, startFrame:0, endFrame:0, x:-54, y:-56, w:108, h:112});
+	this.filterCacheList.push({instance: this.instance, startFrame:5, endFrame:9, x:-54, y:-56, w:108, h:112});
+	this.filterCacheList.push({instance: this.instance, startFrame:10, endFrame:14, x:-54, y:-56, w:108, h:112});
+	this.filterCacheList.push({instance: this.instance, startFrame:15, endFrame:19, x:-54, y:-56, w:108, h:112});
+	this.filterCacheList.push({instance: this.instance, startFrame:20, endFrame:39, x:-54, y:-56, w:108, h:112});
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
@@ -1137,17 +1333,31 @@ if (reversed == null) { reversed = false; }
 	this.frame_0 = function() {
 		this.stop();
 	}
+	this.frame_19 = function() {
+		this.stop();
+	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(20));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(19).call(this.frame_19).wait(21));
 
 	// Calque_1
 	this.instance = new lib.astrolabe_btn();
 	this.instance.setTransform(-4.8,-46,1,1,0,0,0,-3.8,-46);
+	var instanceFilter_1 = new cjs.ColorFilter(1,1,1,1,0,0,0,0);
+	this.instance.filters = [instanceFilter_1];
+	this.instance.cache(-56,-57,112,114);
 	new cjs.ButtonHelper(this.instance, 0, 1, 1);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({regX:-3.6,regY:-46.1,rotation:-4.7888,x:-4.7,y:-46.15},4).to({regX:-3.7,rotation:10.955,x:-4.75,y:-46.1},5).to({rotation:-4.9838,x:-4.85,y:-46.2},5).to({regX:-3.8,regY:-46,rotation:0,x:-4.8,y:-46},5).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({regX:-3.6,regY:-46.1,rotation:-4.7888,x:-4.7,y:-46.15},4).to({regX:-3.7,rotation:10.955,x:-4.75,y:-46.1},5).to({rotation:-4.9838,x:-4.85,y:-46.2},5).to({regX:-3.8,regY:-46,rotation:0,x:-4.8,y:-46},5).wait(21));
+	this.timeline.addTween(cjs.Tween.get(instanceFilter_1).to(new cjs.ColorFilter(0.95,0.95,0.95,1,12.75,12.75,12.75,0), 4).to(new cjs.ColorFilter(0.9,0.9,0.9,1,25.5,25.5,25.5,0), 5).to(new cjs.ColorFilter(0.85,0.85,0.85,1,38.25,38.25,38.25,0), 5).to(new cjs.ColorFilter(0.8,0.8,0.8,1,51,51,51,0), 5).to(new cjs.ColorFilter(1,1,1,1,0,0,0,0), 20).wait(1));
 
+	this.filterCacheList = [];
+	this.filterCacheList.push({instance: this.instance, startFrame:1, endFrame:4, x:-56, y:-57, w:112, h:114});
+	this.filterCacheList.push({instance: this.instance, startFrame:0, endFrame:0, x:-56, y:-57, w:112, h:114});
+	this.filterCacheList.push({instance: this.instance, startFrame:5, endFrame:9, x:-56, y:-57, w:112, h:114});
+	this.filterCacheList.push({instance: this.instance, startFrame:10, endFrame:14, x:-56, y:-57, w:112, h:114});
+	this.filterCacheList.push({instance: this.instance, startFrame:15, endFrame:19, x:-56, y:-57, w:112, h:114});
+	this.filterCacheList.push({instance: this.instance, startFrame:20, endFrame:39, x:-56, y:-57, w:112, h:114});
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
@@ -1169,17 +1379,31 @@ if (reversed == null) { reversed = false; }
 	this.frame_0 = function() {
 		this.stop();
 	}
+	this.frame_19 = function() {
+		this.stop();
+	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(20));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(19).call(this.frame_19).wait(21));
 
-	// Calque_1
+	// hover
 	this.instance = new lib.acuapor_btn();
 	this.instance.setTransform(-4.8,-46,1,1,0,0,0,-3.8,-46);
+	var instanceFilter_1 = new cjs.ColorFilter(1,1,1,1,0,0,0,0);
+	this.instance.filters = [instanceFilter_1];
+	this.instance.cache(-55,-60,112,120);
 	new cjs.ButtonHelper(this.instance, 0, 1, 1);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({regX:-3.6,regY:-46.1,rotation:-4.7888,x:-4.7,y:-46.15},4).to({regX:-3.7,rotation:10.955,x:-4.75,y:-46.1},5).to({rotation:-4.9838,x:-4.85,y:-46.2},5).to({regX:-3.8,regY:-46,rotation:0,x:-4.8,y:-46},5).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({regX:-3.6,regY:-46.1,rotation:-4.7888,x:-4.7,y:-46.15},4).to({regX:-3.7,rotation:10.955,x:-4.75,y:-46.1},5).to({rotation:-4.9838,x:-4.85,y:-46.2},5).to({regX:-3.8,regY:-46,rotation:0,x:-4.8,y:-46},5).wait(21));
+	this.timeline.addTween(cjs.Tween.get(instanceFilter_1).to(new cjs.ColorFilter(0.95,0.95,0.95,1,12.75,12.75,12.75,0), 4).to(new cjs.ColorFilter(0.9,0.9,0.9,1,25.5,25.5,25.5,0), 5).to(new cjs.ColorFilter(0.85,0.85,0.85,1,38.25,38.25,38.25,0), 5).to(new cjs.ColorFilter(0.8,0.8,0.8,1,51,51,51,0), 5).to(new cjs.ColorFilter(1,1,1,1,0,0,0,0), 20).wait(1));
 
+	this.filterCacheList = [];
+	this.filterCacheList.push({instance: this.instance, startFrame:1, endFrame:4, x:-55, y:-60, w:112, h:120});
+	this.filterCacheList.push({instance: this.instance, startFrame:0, endFrame:0, x:-55, y:-60, w:112, h:120});
+	this.filterCacheList.push({instance: this.instance, startFrame:5, endFrame:9, x:-55, y:-60, w:112, h:120});
+	this.filterCacheList.push({instance: this.instance, startFrame:10, endFrame:14, x:-55, y:-60, w:112, h:120});
+	this.filterCacheList.push({instance: this.instance, startFrame:15, endFrame:19, x:-55, y:-60, w:112, h:120});
+	this.filterCacheList.push({instance: this.instance, startFrame:20, endFrame:39, x:-55, y:-60, w:112, h:120});
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
@@ -1225,7 +1449,7 @@ if (reversed == null) { reversed = false; }
 		
 		_this.acuapor_btn_anim.on('mouseout', function () {
 		
-			_this.acuapor_btn_anim.gotoAndPlay(1);
+			_this.acuapor_btn_anim.gotoAndPlay(20);
 		});
 		
 		_this.tibabiolabs_btn_anim.on('mouseover', function () {
@@ -1236,7 +1460,7 @@ if (reversed == null) { reversed = false; }
 		
 		_this.tibabiolabs_btn_anim.on('mouseout', function () {
 		
-			_this.tibabiolabs_btn_anim.gotoAndPlay(1);
+			_this.tibabiolabs_btn_anim.gotoAndPlay(20);
 		});
 		
 		_this.astrolabe_btn_anim.on('mouseover', function () {
@@ -1247,7 +1471,7 @@ if (reversed == null) { reversed = false; }
 		
 		_this.astrolabe_btn_anim.on('mouseout', function () {
 		
-			_this.astrolabe_btn_anim.gotoAndPlay(1);
+			_this.astrolabe_btn_anim.gotoAndPlay(20);
 		});
 		
 		_this.medipub_btn_anim.on('mouseover', function () {
@@ -1258,7 +1482,7 @@ if (reversed == null) { reversed = false; }
 		
 		_this.medipub_btn_anim.on('mouseout', function () {
 		
-			_this.medipub_btn_anim.gotoAndPlay(1);
+			_this.medipub_btn_anim.gotoAndPlay(20);
 		});
 		
 		_this.president_btn_anim.on('mouseover', function () {
@@ -1269,7 +1493,7 @@ if (reversed == null) { reversed = false; }
 		
 		_this.president_btn_anim.on('mouseout', function () {
 		
-			_this.president_btn_anim.gotoAndPlay(1);
+			_this.president_btn_anim.gotoAndPlay(20);
 		});
 		
 		
@@ -1281,7 +1505,7 @@ if (reversed == null) { reversed = false; }
 		
 		_this.japanexpo_btn_anim.on('mouseout', function () {
 		
-			_this.japanexpo_btn_anim.gotoAndPlay(1);
+			_this.japanexpo_btn_anim.gotoAndPlay(20);
 		});
 		
 		
@@ -1293,7 +1517,7 @@ if (reversed == null) { reversed = false; }
 		
 		_this.freeshprod_btn_anim.on('mouseout', function () {
 		
-			_this.freeshprod_btn_anim.gotoAndPlay(1);
+			_this.freeshprod_btn_anim.gotoAndPlay(20);
 		});
 		
 		_this.resicover_btn_anim.on('mouseover', function () {
@@ -1304,7 +1528,7 @@ if (reversed == null) { reversed = false; }
 		
 		_this.resicover_btn_anim.on('mouseout', function () {
 		
-			_this.resicover_btn_anim.gotoAndPlay(1);
+			_this.resicover_btn_anim.gotoAndPlay(20);
 		});
 		
 		_this.healthmeup_btn_anim.on('mouseover', function () {
@@ -1315,7 +1539,7 @@ if (reversed == null) { reversed = false; }
 		
 		_this.healthmeup_btn_anim.on('mouseout', function () {
 		
-			_this.healthmeup_btn_anim.gotoAndPlay(1);
+			_this.healthmeup_btn_anim.gotoAndPlay(20);
 		});
 		
 		_this.webofly_btn_anim.on('mouseover', function () {
@@ -1326,7 +1550,7 @@ if (reversed == null) { reversed = false; }
 		
 		_this.webofly_btn_anim.on('mouseout', function () {
 		
-			_this.webofly_btn_anim.gotoAndPlay(1);
+			_this.webofly_btn_anim.gotoAndPlay(20);
 		});
 		
 		_this.pnud_btn_anim.on('mouseover', function () {
@@ -1337,7 +1561,7 @@ if (reversed == null) { reversed = false; }
 		
 		_this.pnud_btn_anim.on('mouseout', function () {
 		
-			_this.pnud_btn_anim.gotoAndPlay(1);
+			_this.pnud_btn_anim.gotoAndPlay(20);
 		});
 		
 		_this.tapetum_btn_anim.on('mouseover', function () {
@@ -1348,7 +1572,7 @@ if (reversed == null) { reversed = false; }
 		
 		_this.tapetum_btn_anim.on('mouseout', function () {
 		
-			_this.tapetum_btn_anim.gotoAndPlay(1);
+			_this.tapetum_btn_anim.gotoAndPlay(20);
 		});
 		
 		_this.postetn_btn_anim.on('mouseover', function () {
@@ -1359,7 +1583,7 @@ if (reversed == null) { reversed = false; }
 		
 		_this.postetn_btn_anim.on('mouseout', function () {
 		
-			_this.postetn_btn_anim.gotoAndPlay(1);
+			_this.postetn_btn_anim.gotoAndPlay(20);
 		});
 		
 		_this.macbeth_btn_anim.on('mouseover', function () {
@@ -1370,7 +1594,7 @@ if (reversed == null) { reversed = false; }
 		
 		_this.macbeth_btn_anim.on('mouseout', function () {
 		
-			_this.macbeth_btn_anim.gotoAndPlay(1);
+			_this.macbeth_btn_anim.gotoAndPlay(20);
 		});
 		
 		_this.mc_btn_anim.on('mouseover', function () {
@@ -1381,7 +1605,7 @@ if (reversed == null) { reversed = false; }
 		
 		_this.mc_btn_anim.on('mouseout', function () {
 		
-			_this.mc_btn_anim.gotoAndPlay(1);
+			_this.mc_btn_anim.gotoAndPlay(20);
 		});
 		
 		_this.tvmix_btn_anim.on('mouseover', function () {
@@ -1392,7 +1616,7 @@ if (reversed == null) { reversed = false; }
 		
 		_this.tvmix_btn_anim.on('mouseout', function () {
 		
-			_this.tvmix_btn_anim.gotoAndPlay(1);
+			_this.tvmix_btn_anim.gotoAndPlay(20);
 		});
 	}
 
@@ -1412,6 +1636,7 @@ if (reversed == null) { reversed = false; }
 	this.tvmix_btn_anim.setTransform(732.2,344.7,0.6983,0.6983);
 
 	this.timeline.addTween(cjs.Tween.get(this.tvmix_btn_anim).wait(1));
+	this.tvmix_btn_anim.addEventListener("tick", AdobeAn.handleFilterCache);
 
 	// mc_btn_anim
 	this.mc_btn_anim = new lib.mc_btn_anim();
@@ -1419,6 +1644,7 @@ if (reversed == null) { reversed = false; }
 	this.mc_btn_anim.setTransform(599.35,346.2,0.6983,0.6983);
 
 	this.timeline.addTween(cjs.Tween.get(this.mc_btn_anim).wait(1));
+	this.mc_btn_anim.addEventListener("tick", AdobeAn.handleFilterCache);
 
 	// macbeth_btn_anim
 	this.macbeth_btn_anim = new lib.macbeth_btn_anim();
@@ -1426,6 +1652,7 @@ if (reversed == null) { reversed = false; }
 	this.macbeth_btn_anim.setTransform(480.55,344.2,0.6983,0.6983);
 
 	this.timeline.addTween(cjs.Tween.get(this.macbeth_btn_anim).wait(1));
+	this.macbeth_btn_anim.addEventListener("tick", AdobeAn.handleFilterCache);
 
 	// postetn_btn_anim
 	this.postetn_btn_anim = new lib.postetn_btn_anim();
@@ -1433,6 +1660,7 @@ if (reversed == null) { reversed = false; }
 	this.postetn_btn_anim.setTransform(354.05,347.7,0.6983,0.6983);
 
 	this.timeline.addTween(cjs.Tween.get(this.postetn_btn_anim).wait(1));
+	this.postetn_btn_anim.addEventListener("tick", AdobeAn.handleFilterCache);
 
 	// tapetum_btn_anim
 	this.tapetum_btn_anim = new lib.tapetum_btn_anim();
@@ -1440,6 +1668,7 @@ if (reversed == null) { reversed = false; }
 	this.tapetum_btn_anim.setTransform(739.55,245.45,0.6983,0.6983);
 
 	this.timeline.addTween(cjs.Tween.get(this.tapetum_btn_anim).wait(1));
+	this.tapetum_btn_anim.addEventListener("tick", AdobeAn.handleFilterCache);
 
 	// pnud_btn_anim
 	this.pnud_btn_anim = new lib.pnud_btn_anim();
@@ -1447,6 +1676,7 @@ if (reversed == null) { reversed = false; }
 	this.pnud_btn_anim.setTransform(605.55,246.55,0.6983,0.6983);
 
 	this.timeline.addTween(cjs.Tween.get(this.pnud_btn_anim).wait(1));
+	this.pnud_btn_anim.addEventListener("tick", AdobeAn.handleFilterCache);
 
 	// webofly_btn_anim
 	this.webofly_btn_anim = new lib.webofly_btn_anim();
@@ -1454,6 +1684,7 @@ if (reversed == null) { reversed = false; }
 	this.webofly_btn_anim.setTransform(466.1,252.8,0.6983,0.6983);
 
 	this.timeline.addTween(cjs.Tween.get(this.webofly_btn_anim).wait(1));
+	this.webofly_btn_anim.addEventListener("tick", AdobeAn.handleFilterCache);
 
 	// healthmeup_btn_anim
 	this.healthmeup_btn_anim = new lib.healthmeup_btn_anim();
@@ -1461,6 +1692,7 @@ if (reversed == null) { reversed = false; }
 	this.healthmeup_btn_anim.setTransform(348.6,253.3,0.6983,0.6983);
 
 	this.timeline.addTween(cjs.Tween.get(this.healthmeup_btn_anim).wait(1));
+	this.healthmeup_btn_anim.addEventListener("tick", AdobeAn.handleFilterCache);
 
 	// resicover_btn_anim
 	this.resicover_btn_anim = new lib.resicover_btn_anim();
@@ -1468,6 +1700,7 @@ if (reversed == null) { reversed = false; }
 	this.resicover_btn_anim.setTransform(723.75,153.3,0.6983,0.6983);
 
 	this.timeline.addTween(cjs.Tween.get(this.resicover_btn_anim).wait(1));
+	this.resicover_btn_anim.addEventListener("tick", AdobeAn.handleFilterCache);
 
 	// freeshprod_btn_anim
 	this.freeshprod_btn_anim = new lib.freeshprod_btn_anim();
@@ -1475,6 +1708,7 @@ if (reversed == null) { reversed = false; }
 	this.freeshprod_btn_anim.setTransform(603.75,154.55,0.6983,0.6983);
 
 	this.timeline.addTween(cjs.Tween.get(this.freeshprod_btn_anim).wait(1));
+	this.freeshprod_btn_anim.addEventListener("tick", AdobeAn.handleFilterCache);
 
 	// japanexpo_btn_anim
 	this.japanexpo_btn_anim = new lib.japanexpo_btn_anim();
@@ -1482,6 +1716,7 @@ if (reversed == null) { reversed = false; }
 	this.japanexpo_btn_anim.setTransform(473.75,159.05,0.6983,0.6983);
 
 	this.timeline.addTween(cjs.Tween.get(this.japanexpo_btn_anim).wait(1));
+	this.japanexpo_btn_anim.addEventListener("tick", AdobeAn.handleFilterCache);
 
 	// president_btn_anim
 	this.president_btn_anim = new lib.president_btn_anim();
@@ -1489,6 +1724,7 @@ if (reversed == null) { reversed = false; }
 	this.president_btn_anim.setTransform(352,157.55,0.6983,0.6983);
 
 	this.timeline.addTween(cjs.Tween.get(this.president_btn_anim).wait(1));
+	this.president_btn_anim.addEventListener("tick", AdobeAn.handleFilterCache);
 
 	// mediterranean_btn_anim
 	this.medipub_btn_anim = new lib.medipub_btn_anim();
@@ -1496,6 +1732,7 @@ if (reversed == null) { reversed = false; }
 	this.medipub_btn_anim.setTransform(735.5,60.7,0.6983,0.6983);
 
 	this.timeline.addTween(cjs.Tween.get(this.medipub_btn_anim).wait(1));
+	this.medipub_btn_anim.addEventListener("tick", AdobeAn.handleFilterCache);
 
 	// astrolabe_btn_anim
 	this.astrolabe_btn_anim = new lib.astrolabe_btn_anim();
@@ -1503,6 +1740,7 @@ if (reversed == null) { reversed = false; }
 	this.astrolabe_btn_anim.setTransform(594.25,60.2,0.6983,0.6983);
 
 	this.timeline.addTween(cjs.Tween.get(this.astrolabe_btn_anim).wait(1));
+	this.astrolabe_btn_anim.addEventListener("tick", AdobeAn.handleFilterCache);
 
 	// tibabiolabs_btn_anim
 	this.tibabiolabs_btn_anim = new lib.tibabiolabs_btn_anim();
@@ -1510,6 +1748,7 @@ if (reversed == null) { reversed = false; }
 	this.tibabiolabs_btn_anim.setTransform(464.25,60.7,0.6983,0.6983);
 
 	this.timeline.addTween(cjs.Tween.get(this.tibabiolabs_btn_anim).wait(1));
+	this.tibabiolabs_btn_anim.addEventListener("tick", AdobeAn.handleFilterCache);
 
 	// acuapor_btn_anim
 	this.acuapor_btn_anim = new lib.acuapor_btn_anim();
@@ -1517,6 +1756,7 @@ if (reversed == null) { reversed = false; }
 	this.acuapor_btn_anim.setTransform(333.5,60.45,0.6983,0.6983);
 
 	this.timeline.addTween(cjs.Tween.get(this.acuapor_btn_anim).wait(1));
+	this.acuapor_btn_anim.addEventListener("tick", AdobeAn.handleFilterCache);
 
 	// Clear
 	this.clear_anim = new lib.Clear_anim();
@@ -1538,9 +1778,9 @@ lib.properties = {
 	color: "#333333",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/PenseBeteBack.jpg?1689854261235", id:"PenseBeteBack"},
-		{src:"images/PenseBeteclear.jpg?1689854261235", id:"PenseBeteclear"},
-		{src:"images/graphic_menu_atlas_P_1.png?1689854261156", id:"graphic_menu_atlas_P_1"}
+		{src:"images/PenseBeteBack.jpg?1690108312585", id:"PenseBeteBack"},
+		{src:"images/PenseBeteclear.jpg?1690108312585", id:"PenseBeteclear"},
+		{src:"images/graphic_menu_atlas_P_1.png?1690108312480", id:"graphic_menu_atlas_P_1"}
 	],
 	preloads: []
 };
