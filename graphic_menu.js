@@ -1274,16 +1274,22 @@ if (reversed == null) { reversed = false; }
 		
 		var _this = this;
 		
-		_this.back_trigger_btn.on('mouseover', function(){
+		_this.back_trigger_btn.on('mouseover', function () {
 		
-		_this.gotoAndPlay(1);
+			_this.gotoAndPlay(1);
 		});
 		
 		
 		
-		_this.back_trigger_btn.on('mouseout', function(){
+		_this.back_trigger_btn.on('mouseout', function () {
 		
-		_this.gotoAndPlay(11);
+			_this.gotoAndPlay(11);
+		});
+		
+		
+		_this.back_trigger_btn.on('click', function () {
+		
+			window.open('gallery_menu.html', '_self');
 		});
 	}
 	this.frame_9 = function() {
@@ -1618,6 +1624,108 @@ if (reversed == null) { reversed = false; }
 		
 			_this.tvmix_btn_anim.gotoAndPlay(20);
 		});
+		
+		
+		
+		_this.acuapor_btn_anim.on('click', function () {
+		
+			window.open('p.acuapor.html', '_self');
+		});
+		
+		
+		
+		_this.astrolabe_btn_anim.on('click', function () {
+		
+			window.open('p.astrolabe.html', '_self');
+		});
+		
+		
+		_this.freeshprod_btn_anim.on('click', function () {
+		
+			window.open('P.FreeshProd.html', '_self');
+		});
+		
+		
+		
+		_this.healthmeup_btn_anim.on('click', function () {
+		
+			window.open('HMUP.html', '_self');
+		});
+		
+		
+		_this.japanexpo_btn_anim.on('click', function () {
+		
+			window.open('P.JapanExpo.html', '_self');
+		});
+		
+		
+		
+		_this.macbeth_btn_anim.on('click', function () {
+		
+			window.open('P.Macbeth.html', '_self');
+		});
+		
+		
+		
+		_this.mc_btn_anim.on('click', function () {
+		
+			window.open('P. mc.html', '_self');
+		});
+		
+		
+		_this.medipub_btn_anim.on('click', function () {
+		
+			window.open('P.MediPub.html', '_self');
+		});
+		
+		
+		_this.pnud_btn_anim.on('click', function () {
+		
+			window.open('P. PNUD.html', '_self');
+		});
+		
+		
+		_this.president_btn_anim.on('click', function () {
+		
+			window.open('P.President.html', '_self');
+		});
+		
+		
+		_this.resicover_btn_anim.on('click', function () {
+		
+			window.open('p.resicover.html', '_self');
+		});
+		
+		
+		_this.tapetum_btn_anim.on('click', function () {
+		
+			window.open('P.Tapetum.html', '_self');
+		});
+		
+		
+		
+		_this.tvmix_btn_anim.on('click', function () {
+		
+			window.open('P.Tvmix.html', '_self');
+		});
+		
+		
+		_this.webofly_btn_anim.on('click', function(){
+		
+		window.open('P.Webofly.html', '_self');
+		});
+		
+		
+		_this.postetn_btn_anim.on('click', function(){
+		
+		window.open('P.RapidPoste.html', '_self');
+		});
+		
+		
+		_this.tibabiolabs_btn_anim.on('click', function(){
+		
+		window.open('P.tibabiolabs.html', '_self');
+		});
 	}
 
 	// actions tween:
@@ -1778,9 +1886,9 @@ lib.properties = {
 	color: "#333333",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/PenseBeteBack.jpg?1690108312585", id:"PenseBeteBack"},
-		{src:"images/PenseBeteclear.jpg?1690108312585", id:"PenseBeteclear"},
-		{src:"images/graphic_menu_atlas_P_1.png?1690108312480", id:"graphic_menu_atlas_P_1"}
+		{src:"images/PenseBeteBack.jpg?1690898536131", id:"PenseBeteBack"},
+		{src:"images/PenseBeteclear.jpg?1690898536131", id:"PenseBeteclear"},
+		{src:"images/graphic_menu_atlas_P_1.png?1690898536031", id:"graphic_menu_atlas_P_1"}
 	],
 	preloads: []
 };
