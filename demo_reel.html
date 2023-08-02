@@ -14,7 +14,7 @@
 <title>demo_reel</title>
 <!-- write your code here -->
 <style>
-  #animation_container, #_preload_div_ {
+  #animation_container {
 	position:absolute;
 	margin:auto;
 	left:0;right:0;
@@ -222,11 +222,11 @@ lib.properties = {
 	color: "#333333",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/TVBG.jpg?1690896205036", id:"TVBG"},
-		{src:"images/demo_reel_atlas_P_1.png?1690896204999", id:"demo_reel_atlas_P_1"},
-		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1690896205036", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1690896205036", id:"sdk/anwidget.js"},
-		{src:"components/video/src/video.js?1690896205036", id:"an.Video"}
+		{src:"images/TVBG.jpg", id:"TVBG"},
+		{src:"images/demo_reel_atlas_P_1.png", id:"demo_reel_atlas_P_1"},
+		{src:"https://code.jquery.com/jquery-3.4.1.min.js", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js", id:"sdk/anwidget.js"},
+		{src:"components/video/src/video.js", id:"an.Video"}
 	],
 	preloads: []
 };
@@ -409,9 +409,6 @@ function handleComplete(evt,comp) {
 	for(i=0; i<ssMetadata.length; i++) {
 		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
 	}
-	var preloaderDiv = document.getElementById("_preload_div_");
-	preloaderDiv.style.display = 'none';
-	dom_overlay_container.style.display = canvas.style.display = 'block';
 	exportRoot = new lib.demo_reel();
 	stage = new lib.Stage(canvas);
 	stage.enableMouseOver();	
@@ -422,7 +419,7 @@ function handleComplete(evt,comp) {
 		createjs.Ticker.addEventListener("tick", stage);
 	}	    
 	//Code to support hidpi screens and responsive scaling.
-	AdobeAn.makeResponsive(true,'both',true,1,[canvas,preloaderDiv,anim_container,dom_overlay_container]);	
+	AdobeAn.makeResponsive(true,'both',true,1,[canvas,anim_container,dom_overlay_container]);	
 	AdobeAn.compositionLoaded(lib.properties.id);
 	fnStartAnimation();
 }
@@ -431,10 +428,9 @@ function handleComplete(evt,comp) {
 </head>
 <body onload="init();" style="margin:0px;">
 	<div id="animation_container" style="background-color:rgba(51, 51, 51, 1.00); width:960px; height:539px">
-		<canvas id="canvas" width="960" height="539" style="position: absolute; display: none; background-color:rgba(51, 51, 51, 1.00);"></canvas>
-		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:960px; height:539px; position: absolute; left: 0px; top: 0px; display: none;">
+		<canvas id="canvas" width="960" height="539" style="position: absolute; display: block; background-color:rgba(51, 51, 51, 1.00);"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:960px; height:539px; position: absolute; left: 0px; top: 0px; display: block;">
 		</div>
 	</div>
-    <div id='_preload_div_' style='position:absolute; top:0; left:0; display: inline-block; height:539px; width: 960px; text-align: center;'>	<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>	<img src=images/_preloader.gif?1690896205048 style='vertical-align: middle; max-height: 100%'/></div>
 </body>
 </html>
