@@ -50,10 +50,6 @@ lib.ssMetadata = [
 	}
 }).prototype = p = new cjs.MovieClip();
 // symbols:
-(lib._1447624 = function() {
-	this.initialize(img._1447624);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1920,1200);
 (lib.acceuil_icon = function() {
 	this.initialize(ss["main_menu_atlas_P_1"]);
 	this.gotoAndStop(0);
@@ -101,7 +97,11 @@ p.nominalBounds = new cjs.Rectangle(0,0,1026,1442);
 (lib.Ipad_mockup = function() {
 	this.initialize(img.Ipad_mockup);
 }).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,2000,1484);// helper functions:
+p.nominalBounds = new cjs.Rectangle(0,0,2000,1484);
+(lib.main_menu_pic = function() {
+	this.initialize(img.main_menu_pic);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1920,1200);// helper functions:
 function mc_symbol_clone() {
 	var clone = this._cloneProps(new this.constructor(this.mode, this.startPosition, this.loop, this.reversed));
 	clone.gotoAndStop(this.currentFrame);
@@ -206,6 +206,22 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
 	this._renderFirstFrame();
 }).prototype = getMCSymbolPrototype(lib.motivation_motion_bg, new cjs.Rectangle(-298,-420.9,596,841.9), null);
+(lib.main_menu_bg = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// Calque_1
+	this.instance = new lib.main_menu_pic();
+	this.instance.setTransform(-37,-21,0.7501,0.6747);
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+	this._renderFirstFrame();
+}).prototype = getMCSymbolPrototype(lib.main_menu_bg, new cjs.Rectangle(-37,-21,1440.1,809.7), null);
 (lib.Interpoler64 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -674,22 +690,6 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(-286,-404,572,809);
-(lib.bg = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-	// Calque_1
-	this.instance = new lib._1447624();
-	this.instance.setTransform(-37,-21,0.7501,0.6747);
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
-	this._renderFirstFrame();
-}).prototype = getMCSymbolPrototype(lib.bg, new cjs.Rectangle(-37,-21,1440.1,809.7), null);
 (lib.motivation_paper = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -1069,7 +1069,7 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.home_btn_anim).wait(1));
 	this.home_btn_anim.addEventListener("tick", AdobeAn.handleFilterCache);
 	// bg
-	this.instance = new lib.bg();
+	this.instance = new lib.main_menu_bg();
 	this.instance.setTransform(0,0,1,1,0,0,0,683,384);
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 	this._renderFirstFrame();
@@ -1117,11 +1117,11 @@ lib.properties = {
 	color: "#333333",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/_1447624.jpg", id:"_1447624"},
 		{src:"images/Accueil_element_6.png", id:"Accueil_element_6"},
 		{src:"images/CV_Mockuppngcopy.png", id:"CV_Mockuppngcopy"},
 		{src:"images/Enveloppe.png", id:"Enveloppe"},
 		{src:"images/Ipad_mockup.png", id:"Ipad_mockup"},
+		{src:"images/main_menu_pic.jpg", id:"main_menu_pic"},
 		{src:"images/main_menu_atlas_P_1.png", id:"main_menu_atlas_P_1"},
 		{src:"images/main_menu_atlas_P_2.png", id:"main_menu_atlas_P_2"},
 		{src:"images/main_menu_atlas_P_3.png", id:"main_menu_atlas_P_3"},

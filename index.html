@@ -49,14 +49,14 @@ lib.ssMetadata = [
 	}
 }).prototype = p = new cjs.MovieClip();
 // symbols:
-(lib.Bitmap1 = function() {
-	this.initialize(img.Bitmap1);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1807,1016);
 (lib.Bitmap2 = function() {
 	this.initialize(ss["index_atlas_P_4"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
+(lib.index_bg = function() {
+	this.initialize(img.index_bg);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,1807,1016);
 (lib.Low_left = function() {
 	this.initialize(ss["index_atlas_P_3"]);
 	this.gotoAndStop(0);
@@ -730,7 +730,7 @@ if (reversed == null) { reversed = false; }
 	this.instance_20.setTransform(-220,-159,1.457,1.457);
 	this.timeline.addTween(cjs.Tween.get(this.instance_20).wait(30));
 	// BG
-	this.instance_21 = new lib.Bitmap1();
+	this.instance_21 = new lib.index_bg();
 	this.instance_21.setTransform(-903,-510);
 	this.timeline.addTween(cjs.Tween.get(this.instance_21).wait(30));
 	this._renderFirstFrame();
@@ -778,7 +778,7 @@ lib.properties = {
 	color: "#333333",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Bitmap1.png", id:"Bitmap1"},
+		{src:"images/index_bg.png", id:"index_bg"},
 		{src:"images/index_atlas_P_1.png", id:"index_atlas_P_1"},
 		{src:"images/index_atlas_P_2.png", id:"index_atlas_P_2"},
 		{src:"images/index_atlas_P_3.png", id:"index_atlas_P_3"},
