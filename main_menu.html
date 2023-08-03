@@ -1096,7 +1096,7 @@ if (reversed == null) { reversed = false; }
 			this.isSingleFrame = true;
 		}
 		document.body.style.backgroundColor = lib.properties.color;
-		this.stop();
+		document.querySelector(".loading").remove();
 	}
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
