@@ -281,7 +281,7 @@ if (reversed == null) { reversed = false; }
 	var props = new Object();
 	props.mode = mode;
 	props.startPosition = startPosition;
-	props.labels = {slide0:0,slide1:29,slide2:59};
+	props.labels = {slide0:0,slide1:29};
 	props.loop = loop;
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
@@ -344,7 +344,7 @@ if (reversed == null) { reversed = false; }
 		tl.start();
 	}
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(60));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(30));
 	// navigation
 	this.prevButton = new lib.prevButton_anim();
 	this.prevButton.name = "prevButton";
@@ -352,31 +352,25 @@ if (reversed == null) { reversed = false; }
 	this.nextButton = new lib.nextButton_anim();
 	this.nextButton.name = "nextButton";
 	this.nextButton.setTransform(32.3,348.45,1,1,0,0,0,18,15.3);
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.nextButton},{t:this.prevButton}]}).wait(60));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.nextButton},{t:this.prevButton}]}).wait(30));
 	this.prevButton.addEventListener("tick", AdobeAn.handleFilterCache);
 	this.nextButton.addEventListener("tick", AdobeAn.handleFilterCache);
 	// cv_anim1
 	this.instance = new lib.Interpoler70();
 	this.instance.setTransform(-5.2,-8.9,0.8041,0.804);
 	this.instance.shadow = new cjs.Shadow("rgba(0,0,0,1)",7,7,10);
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({x:501.55},14).to({_off:true},1).wait(45));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({x:501.55},14).to({_off:true},1).wait(15));
 	// cl_anim1
 	this.instance_1 = new lib.motivation_paper();
 	this.instance_1.setTransform(0,-28,0.8054,0.8053);
 	this.instance_1.cache(-304,-427,626,871);
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(29).to({y:-27.65},0).to({x:515.3},15).to({_off:true},1).wait(15));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(29).to({y:-27.65},0).wait(1));
 	// cv_anim2
 	this.instance_2 = new lib.Interpoler70();
 	this.instance_2.setTransform(501.55,-8.9,0.8041,0.804);
 	this.instance_2.shadow = new cjs.Shadow("rgba(0,0,0,1)",7,7,10);
 	this.instance_2._off = true;
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(14).to({_off:false},0).to({x:-5.2},15).wait(31));
-	// cl_anim2
-	this.instance_3 = new lib.motivation_paper();
-	this.instance_3.setTransform(515.3,-27.65,0.8054,0.8053);
-	this.instance_3._off = true;
-	this.instance_3.cache(-304,-427,626,871);
-	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(44).to({_off:false},0).to({x:0},15).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(14).to({_off:false},0).to({x:-5.2},15).wait(1));
 	this._renderFirstFrame();
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(-248,-375.5,1038.8,749.7);
@@ -411,16 +405,15 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(29).to({_off:false},0).wait(40));
 	// txt
 	this.instance_1 = new lib.Interpoler77("synched",0);
-	this.instance_1.setTransform(35.5,32.55);
-	this.instance_1._off = true;
+	this.instance_1.setTransform(66.5,32.55);
 	this.instance_2 = new lib.Interpoler78("synched",0);
 	this.instance_2.setTransform(13.5,32.55);
 	this.instance_2._off = true;
 	var instance_2Filter_1 = new cjs.ColorFilter(1,1,1,1,0,0,0,0);
 	this.instance_2.filters = [instance_2Filter_1];
 	this.instance_2.cache(-13,-34,26,69);
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(29).to({_off:false},0).to({_off:true,x:13.5},20,cjs.Ease.quintInOut).to({_off:false,x:35.5},19,cjs.Ease.quintInOut).wait(1));
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(29).to({_off:false},20,cjs.Ease.quintInOut).to({_off:true,x:35.5},19,cjs.Ease.quintInOut).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).to({x:25.5},29,cjs.Ease.sineInOut).to({_off:true,x:13.5},20,cjs.Ease.quintInOut).to({_off:false,x:25.5},19,cjs.Ease.quintInOut).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(29).to({_off:false},20,cjs.Ease.quintInOut).to({_off:true,x:25.5},19,cjs.Ease.quintInOut).wait(1));
 	this.timeline.addTween(cjs.Tween.get(instance_2Filter_1).wait(29).to(new cjs.ColorFilter(0,0,0,1,0,167,157,0), 20).to(new cjs.ColorFilter(1,1,1,1,0,0,0,0), 19,cjs.Ease.quintInOut).wait(1));
 	// Calque_1
 	this.instance_3 = new lib.back_btn();
@@ -438,7 +431,7 @@ if (reversed == null) { reversed = false; }
 	this.filterCacheList.push({instance: this.instance_3, startFrame:50, endFrame:68, x:-85, y:-33, w:169, h:67});
 	this._renderFirstFrame();
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0,0,55.7,65.2);
+p.nominalBounds = new cjs.Rectangle(0,0,77.7,65.2);
 // stage content:
 (lib.cv = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
