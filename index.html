@@ -6,7 +6,6 @@
 	3. All occurrences of existing tokens will be replaced by their appropriate values.
 	4. Blank lines will be removed automatically.
 	5. Remove unnecessary comments before creating your template.
-<link rel="apple-touch-icon" href="/1_855aa36/public/build/logo192.png">
 -->
 <html>
 <head>
@@ -14,24 +13,6 @@
 <meta name="authoring-tool" content="Adobe_Animate_CC">
 <title>index</title>
 
-
-<div id="preload"></div>
-
-$('#preload').load('preload.php', function() {   
-$('#preload').remove();   
-});
-
-<div style="display:none">
-<?php
-$dirf = 'images';
-$dir  = scandir($dirf);
-foreach ($dir as $file) {
-if (($file != '..') && ($file != '.')) {
-    echo "<img src='images/$file' />";
-    }
-}
-?>
-</div>
 
 <style>
 	@font-face
@@ -107,7 +88,7 @@ if (($file != '..') && ($file != '.')) {
 	}
 	/* LOADER THIRD PARTY CODE END  */
 </style>
-<!-- write your code here -->
+
 <style>
   body {
 	overflow:hidden;

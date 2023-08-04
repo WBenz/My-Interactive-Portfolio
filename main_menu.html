@@ -14,6 +14,11 @@
 <title>main_menu</title>
 <!-- write your code here -->
 <style>
+body{
+background-color:#333333;
+}
+</style>
+<style>
   #animation_container, #_preload_div_ {
 	position:absolute;
 	margin:auto;
@@ -733,7 +738,7 @@ if (reversed == null) { reversed = false; }
 		_this.gotoAndPlay(30);
 		});
 		_this.home_trigger_btn.on('click', function(){
-		window.open('index.html', '_self');
+		window.open('start_menu.html', '_self');
 		});
 	}
 	this.frame_29 = function() {
@@ -1116,16 +1121,16 @@ lib.properties = {
 	color: "#333333",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Accueil_element_6.png?1691095616305", id:"Accueil_element_6"},
-		{src:"images/CV_Mockuppngcopy.png?1691095616305", id:"CV_Mockuppngcopy"},
-		{src:"images/Enveloppe.png?1691095616305", id:"Enveloppe"},
-		{src:"images/Ipad_mockup.png?1691095616305", id:"Ipad_mockup"},
-		{src:"images/main_menu_pic.jpg?1691095616305", id:"main_menu_pic"},
-		{src:"images/main_menu_atlas_P_1.png?1691095616266", id:"main_menu_atlas_P_1"},
-		{src:"images/main_menu_atlas_P_2.png?1691095616266", id:"main_menu_atlas_P_2"},
-		{src:"images/main_menu_atlas_P_3.png?1691095616266", id:"main_menu_atlas_P_3"},
-		{src:"images/main_menu_atlas_P_4.png?1691095616266", id:"main_menu_atlas_P_4"},
-		{src:"images/main_menu_atlas_P_5.png?1691095616266", id:"main_menu_atlas_P_5"}
+		{src:"images/Accueil_element_6.png", id:"Accueil_element_6"},
+		{src:"images/CV_Mockuppngcopy.png", id:"CV_Mockuppngcopy"},
+		{src:"images/Enveloppe.png", id:"Enveloppe"},
+		{src:"images/Ipad_mockup.png", id:"Ipad_mockup"},
+		{src:"images/main_menu_pic.jpg", id:"main_menu_pic"},
+		{src:"images/main_menu_atlas_P_1.png", id:"main_menu_atlas_P_1"},
+		{src:"images/main_menu_atlas_P_2.png", id:"main_menu_atlas_P_2"},
+		{src:"images/main_menu_atlas_P_3.png", id:"main_menu_atlas_P_3"},
+		{src:"images/main_menu_atlas_P_4.png", id:"main_menu_atlas_P_4"},
+		{src:"images/main_menu_atlas_P_5.png", id:"main_menu_atlas_P_5"}
 	],
 	preloads: []
 };
@@ -1285,6 +1290,6 @@ function handleComplete(evt,comp) {
 		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:960px; height:539px; position: absolute; left: 0px; top: 0px; display: none;">
 		</div>
 	</div>
-    <div id='_preload_div_' style='position:absolute; top:0; left:0; display: inline-block; height:539px; width: 960px; text-align: center;'>	<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>	<img src=images/_preloader.gif?1691095616311 style='vertical-align: middle; max-height: 100%'/></div>
+    <div id='_preload_div_' style='position:absolute; top:0; left:0; display: inline-block; height:539px; width: 960px; text-align: center;'>	<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>	<img src=images/_preloader.gif style='vertical-align: middle; max-height: 100%'/></div>
 </body>
 </html>
