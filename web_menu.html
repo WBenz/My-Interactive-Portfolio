@@ -14,11 +14,6 @@
 <title>web_menu</title>
 <!-- write your code here -->
 <style>
-body{
-background-color:#333333;
-}
-</style>
-<style>
   #animation_container, #_preload_div_ {
 	position:absolute;
 	margin:auto;
@@ -1073,8 +1068,7 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 	// timeline functions:
 	this.frame_0 = function() {
-		var _this = this;
-		_this.stop();
+		this.stop();
 		stage.enableMouseOver();
 		var _this = this;
 		_this.tvmix_btn_anim.on('mouseover', function () {
@@ -1084,6 +1078,9 @@ if (reversed == null) { reversed = false; }
 		_this.tvmix_btn_anim.on('mouseout', function () {
 			_this.tvmix_btn_anim.gotoAndPlay(10);
 			_this.gotoAndPlay(11);
+		});
+		_this.tvmix_btn_anim.on('click', function(){
+		window.open('web_pages.html', '_self');
 		});
 	}
 	this.frame_9 = function() {
@@ -1132,6 +1129,9 @@ if (reversed == null) { reversed = false; }
 			_this.tapetum_btn_anim.gotoAndPlay(11);
 			_this.gotoAndPlay(11);
 		});
+		_this.tapetum_btn_anim.on('click', function(){
+		window.open('web_pages.html', '_self');
+		});
 	}
 	this.frame_9 = function() {
 		var _this = this;
@@ -1175,6 +1175,9 @@ if (reversed == null) { reversed = false; }
 			_this.gloulou_btn_anim.gotoAndPlay(11);
 			_this.gotoAndPlay(11);
 		});
+		_this.gloulou_btn_anim.on('click', function(){
+		window.open('web_pages.html', '_self');
+		});
 	}
 	this.frame_9 = function() {
 		this.stop();
@@ -1216,6 +1219,9 @@ if (reversed == null) { reversed = false; }
 		_this.digiplus_btn_anim.on('mouseout', function () {
 			_this.digiplus_btn_anim.gotoAndPlay(11);
 			_this.gotoAndPlay(11);
+		});
+		_this.digiplus_btn_anim.on('click', function(){
+		window.open('web_pages.html', '_self');
 		});
 	}
 	this.frame_9 = function() {
@@ -1304,6 +1310,9 @@ if (reversed == null) { reversed = false; }
 		_this.astrolabe_btn_anim.on('mouseout', function () {
 			_this.astrolabe_btn_anim.gotoAndPlay(11);
 			_this.gotoAndPlay(11);
+		});
+		_this.astrolabe_btn_anim.on('click', function(){
+		window.open('web_pages.html', '_self');
 		});
 	}
 	this.frame_9 = function() {
@@ -1440,35 +1449,35 @@ lib.properties = {
 	color: "#333333",
 	opacity: 1.00,
 	manifest: [
-		{src:"Astrolabeglitchanim_0.png", id:"Astrolabeglitchanim_0"},
-		{src:"ComingSoonglitchanim_0.png", id:"ComingSoonglitchanim_0"},
-		{src:"ComingSoonglitchanim_1.png", id:"ComingSoonglitchanim_1"},
-		{src:"ComingSoonglitchanim_10.png", id:"ComingSoonglitchanim_10"},
-		{src:"ComingSoonglitchanim_11.png", id:"ComingSoonglitchanim_11"},
-		{src:"ComingSoonglitchanim_12.png", id:"ComingSoonglitchanim_12"},
-		{src:"ComingSoonglitchanim_13.png", id:"ComingSoonglitchanim_13"},
-		{src:"ComingSoonglitchanim_14.png", id:"ComingSoonglitchanim_14"},
-		{src:"ComingSoonglitchanim_2.png", id:"ComingSoonglitchanim_2"},
-		{src:"ComingSoonglitchanim_3.png", id:"ComingSoonglitchanim_3"},
-		{src:"ComingSoonglitchanim_4.png", id:"ComingSoonglitchanim_4"},
-		{src:"ComingSoonglitchanim_5.png", id:"ComingSoonglitchanim_5"},
-		{src:"ComingSoonglitchanim_6.png", id:"ComingSoonglitchanim_6"},
-		{src:"ComingSoonglitchanim_7.png", id:"ComingSoonglitchanim_7"},
-		{src:"ComingSoonglitchanim_8.png", id:"ComingSoonglitchanim_8"},
-		{src:"ComingSoonglitchanim_9.png", id:"ComingSoonglitchanim_9"},
-		{src:"Digiplusglitchanim_0.png", id:"Digiplusglitchanim_0"},
-		{src:"Gloulouglitchanim_0.png", id:"Gloulouglitchanim_0"},
-		{src:"Power_off_anim_00000.png", id:"Power_off_anim_00000"},
-		{src:"Power_off_anim_00001.png", id:"Power_off_anim_00001"},
-		{src:"Power_off_anim_00002.png", id:"Power_off_anim_00002"},
-		{src:"Power_off_anim_00003.png", id:"Power_off_anim_00003"},
-		{src:"Power_off_anim_00004.png", id:"Power_off_anim_00004"},
-		{src:"Power_off_anim_00005.png", id:"Power_off_anim_00005"},
-		{src:"Power_off_anim_00006.png", id:"Power_off_anim_00006"},
-		{src:"Power_off_anim_00007.png", id:"Power_off_anim_00007"},
-		{src:"Tapetumglitchanim_0.png", id:"Tapetumglitchanim_0"},
-		{src:"TVmixglitchanim_0.png", id:"TVmixglitchanim_0"},
-		{src:"WebDesignMenu.png", id:"WebDesignMenu"}
+		{src:"Astrolabeglitchanim_0.png?1691181225815", id:"Astrolabeglitchanim_0"},
+		{src:"ComingSoonglitchanim_0.png?1691181225815", id:"ComingSoonglitchanim_0"},
+		{src:"ComingSoonglitchanim_1.png?1691181225815", id:"ComingSoonglitchanim_1"},
+		{src:"ComingSoonglitchanim_10.png?1691181225815", id:"ComingSoonglitchanim_10"},
+		{src:"ComingSoonglitchanim_11.png?1691181225815", id:"ComingSoonglitchanim_11"},
+		{src:"ComingSoonglitchanim_12.png?1691181225815", id:"ComingSoonglitchanim_12"},
+		{src:"ComingSoonglitchanim_13.png?1691181225815", id:"ComingSoonglitchanim_13"},
+		{src:"ComingSoonglitchanim_14.png?1691181225815", id:"ComingSoonglitchanim_14"},
+		{src:"ComingSoonglitchanim_2.png?1691181225815", id:"ComingSoonglitchanim_2"},
+		{src:"ComingSoonglitchanim_3.png?1691181225815", id:"ComingSoonglitchanim_3"},
+		{src:"ComingSoonglitchanim_4.png?1691181225815", id:"ComingSoonglitchanim_4"},
+		{src:"ComingSoonglitchanim_5.png?1691181225815", id:"ComingSoonglitchanim_5"},
+		{src:"ComingSoonglitchanim_6.png?1691181225815", id:"ComingSoonglitchanim_6"},
+		{src:"ComingSoonglitchanim_7.png?1691181225815", id:"ComingSoonglitchanim_7"},
+		{src:"ComingSoonglitchanim_8.png?1691181225815", id:"ComingSoonglitchanim_8"},
+		{src:"ComingSoonglitchanim_9.png?1691181225815", id:"ComingSoonglitchanim_9"},
+		{src:"Digiplusglitchanim_0.png?1691181225815", id:"Digiplusglitchanim_0"},
+		{src:"Gloulouglitchanim_0.png?1691181225815", id:"Gloulouglitchanim_0"},
+		{src:"Power_off_anim_00000.png?1691181225815", id:"Power_off_anim_00000"},
+		{src:"Power_off_anim_00001.png?1691181225815", id:"Power_off_anim_00001"},
+		{src:"Power_off_anim_00002.png?1691181225815", id:"Power_off_anim_00002"},
+		{src:"Power_off_anim_00003.png?1691181225815", id:"Power_off_anim_00003"},
+		{src:"Power_off_anim_00004.png?1691181225815", id:"Power_off_anim_00004"},
+		{src:"Power_off_anim_00005.png?1691181225815", id:"Power_off_anim_00005"},
+		{src:"Power_off_anim_00006.png?1691181225815", id:"Power_off_anim_00006"},
+		{src:"Power_off_anim_00007.png?1691181225815", id:"Power_off_anim_00007"},
+		{src:"Tapetumglitchanim_0.png?1691181225815", id:"Tapetumglitchanim_0"},
+		{src:"TVmixglitchanim_0.png?1691181225815", id:"TVmixglitchanim_0"},
+		{src:"WebDesignMenu.png?1691181225815", id:"WebDesignMenu"}
 	],
 	preloads: []
 };
@@ -1628,6 +1637,6 @@ function handleComplete(evt,comp) {
 		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:960px; height:540px; position: absolute; left: 0px; top: 0px; display: none;">
 		</div>
 	</div>
-    <div id='_preload_div_' style='position:absolute; top:0; left:0; display: inline-block; height:540px; width: 960px; text-align: center;'>	<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>	<img src=_preloader.gif style='vertical-align: middle; max-height: 100%'/></div>
+    <div id='_preload_div_' style='position:absolute; top:0; left:0; display: inline-block; height:540px; width: 960px; text-align: center;'>	<span style='display: inline-block; height: 100%; vertical-align: middle;'></span>	<img src=_preloader.gif?1691181225831 style='vertical-align: middle; max-height: 100%'/></div>
 </body>
 </html>
