@@ -13,11 +13,13 @@
 <meta name="authoring-tool" content="Adobe_Animate_CC">
 <title>cv</title>
 <!-- write your code here -->
+
 <style>
-body{
-background-color:#333333;
-}
-</style>
+         body {
+            background-image: url("bodyground.jpg");
+         }
+      </style>
+
 <style>
   #animation_container, #_preload_div_ {
 	position:absolute;
@@ -458,7 +460,6 @@ if (reversed == null) { reversed = false; }
 		if(this.totalFrames == 1) {
 			this.isSingleFrame = true;
 		}
-		document.body.style.backgroundColor = lib.properties.color;
 		var _this = this;
 		stage.enableMouseOver();
 		_this.back_btn_anim.on('mouseover', function(){

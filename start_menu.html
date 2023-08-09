@@ -15,10 +15,40 @@
 <!-- write your code here -->
 
 <style>
-body{
-background-color:#333333;
+         body {
+            background-image: url("bodyground.jpg");
+         }
+      </style>
+
+<script>addEventListener("click", function() {
+    var
+          el = document.documentElement
+        , rfs =
+               el.requestFullScreen
+            || el.webkitRequestFullScreen
+            || el.mozRequestFullScreen
+    ;
+    rfs.call(el);
+});
+
+// Find the right method, call on correct element
+function launchFullScreen(element) {
+  if(element.requestFullScreen) {
+    element.requestFullScreen();
+  } else if(element.mozRequestFullScreen) {
+    element.mozRequestFullScreen();
+  } else if(element.webkitRequestFullScreen) {
+    element.webkitRequestFullScreen();
+  }
 }
-</style>
+
+// Launch fullscreen for browsers that support it!
+launchFullScreen(document.documentElement); // the whole page
+launchFullScreen(document.getElementById("videoElement")); // any individual element
+
+</script>
+
+
 <style>
   #animation_container, #_preload_div_ {
 	position:absolute;

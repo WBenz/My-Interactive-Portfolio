@@ -12,35 +12,6 @@
 <meta charset="UTF-8">
 <meta name="authoring-tool" content="Adobe_Animate_CC">
 <title>index</title>
-<link rel="prefetch" href="/images/_preloader.gif" />
-<link rel="prefetch" href="/images/ResicoverBG.jpeg" />
-<link rel="prefetch" href="/images/AcuaporPantsLabel.jpg" />
-<link rel="prefetch" href="/images/AcuaporPulle.jpg" />
-<link rel="prefetch" href="/images/AcuaporShirtLabel.jpg" />
-<link rel="prefetch" href="/images/AcuaporShirtLogo.jpg" />
-<link rel="prefetch" href="/images/AcuaporShirtP1.jpg" />
-<link rel="prefetch" href="/images/AcuaporShirtP2.jpg" />
-<link rel="prefetch" href="/images/AcuaporTop.jpg" />
-<link rel="prefetch" href="/images/AfficheMandella.jpg" />
-<link rel="prefetch" href="/images/AstrolabeWebSite.jpg" />
-<link rel="prefetch" href="/images/BadgeTipitumHorizontal.jpg" />
-<link rel="prefetch" href="/images/CarteVisiteFreeshProd.jpg" />
-<link rel="prefetch" href="/images/cataloguemimorectoFinal2copie.jpg" />
-<link rel="prefetch" href="/images/cataloguemimorectoFinal3copie.jpg" />
-<link rel="prefetch" href="/images/cataloguemimoversoFinal2copie.jpg" />
-<link rel="prefetch" href="/images/DameSousSolDVDCover2.jpg" />
-<link rel="prefetch" href="/images/DigiplusWebPage.jpg" />
-<link rel="prefetch" href="/images/DVDCouverture2copie.jpg" />
-<link rel="prefetch" href="/images/FreeshBG.jpg" />
-<link rel="prefetch" href="/images/FreeshBrochure1.jpg" />
-<link rel="prefetch" href="/images/FreeshBrochure3.jpg" />
-<link rel="prefetch" href="/images/FreeshProdCartevisite2.jpg" />
-<link rel="prefetch" href="/images/FreeshProdHat2.jpg" />
-<link rel="prefetch" href="/images/FreeshProdHat3.jpg" />
-<link rel="prefetch" href="/images/FreeshProdPapiterie.jpg" />
-<link rel="prefetch" href="/images/InsertionPressTVMIXcopie.jpg" />
-
-
 <style>
 	@font-face
 	{
@@ -50,7 +21,7 @@
 	}
 	:root
 	{
-		--dark-grey: #333333; /* The background color. It should be the same one used for the stage */
+		--dark-grey: #1C1C1C; /* The background color. It should be the same one used for the stage */
 	}
 	/* LOADER THIRD PARTY CODE START  */
 	.loading
@@ -115,7 +86,7 @@
 	}
 	/* LOADER THIRD PARTY CODE END  */
 </style>
-
+<!-- write your code here -->
 <style>
   body {
 	overflow:hidden;
@@ -132,7 +103,9 @@
 (function (cjs, an) {
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
-lib.ssMetadata = [];
+lib.ssMetadata = [
+		{name:"index_atlas_NP_1", frames: [[0,0,987,996]]}
+];
 (lib.AnMovieClip = function(){
 	this.actionFrames = [];
 	this.ignorePause = false;
@@ -150,6 +123,61 @@ lib.ssMetadata = [];
 	}
 }).prototype = p = new cjs.MovieClip();
 // symbols:
+(lib.bodyground = function() {
+	this.initialize(ss["index_atlas_NP_1"]);
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+// helper functions:
+function mc_symbol_clone() {
+	var clone = this._cloneProps(new this.constructor(this.mode, this.startPosition, this.loop, this.reversed));
+	clone.gotoAndStop(this.currentFrame);
+	clone.paused = this.paused;
+	clone.framerate = this.framerate;
+	return clone;
+}
+function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
+	var prototype = cjs.extend(symbol, cjs.MovieClip);
+	prototype.clone = mc_symbol_clone;
+	prototype.nominalBounds = nominalBounds;
+	prototype.frameBounds = frameBounds;
+	return prototype;
+	}
+(lib.Interpoler4 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// Calque_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("#FFFFFF").ss(1,1,1).p("At5lCIbzAAIAAKFI7zAAg");
+	this.shape.setTransform(0.025,0);
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-90,-33.2,180.1,66.5);
+(lib.Interpoler3 = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// Calque_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("#FFFFFF").ss(1,1,1).p("At5lCIbzAAIAAKFI7zAAg");
+	this.shape.setTransform(0.025,0);
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-90,-33.2,180.1,66.5);
 (lib.Hit = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -167,6 +195,23 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(-649.3,-307.3,1298.6,614.6);
+(lib.full_bg = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// Calque_1
+	this.instance = new lib.bodyground();
+	this.instance.setTransform(987,0);
+	this.instance_1 = new lib.bodyground();
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).wait(1));
+	this._renderFirstFrame();
+}).prototype = getMCSymbolPrototype(lib.full_bg, new cjs.Rectangle(0,0,1974,996), null);
 (lib.StartButton = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -178,14 +223,14 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 	// txt
-	this.txt = new cjs.Text("START", "36px 'Arial'", "#D1D1D1");
+	this.txt = new cjs.Text("START", "36px 'Passion One'", "#D1D1D1");
 	this.txt.name = "txt";
 	this.txt.textAlign = "center";
 	this.txt.lineHeight = 42;
 	this.txt.lineWidth = 173;
 	this.txt.parent = this;
 	this.txt.setTransform(0,-19.85);
-	this.timeline.addTween(cjs.Tween.get(this.txt).wait(2).to({y:-18.2,font:"33px 'Arial'",color:"#FFFFFF",lineHeight:38.85},0).to({_off:true},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.txt).wait(1).to({color:"#FFFFFF"},0).wait(1).to({y:-18.2,font:"33px 'Passion One'",lineHeight:38.35},0).to({_off:true},1).wait(1));
 	// hit
 	this.instance = new lib.Hit("single",0);
 	this.instance.setTransform(0,0,0.1207,0.0726);
@@ -194,6 +239,76 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(-88.7,-22.3,177.5,44.7);
+(lib.popup_anim = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// txt
+	this.text = new cjs.Text("PRESS F11 FOR FULLSCREEN", "bold 16px 'Myriad Pro'", "#FFFFFF");
+	this.text.textAlign = "center";
+	this.text.lineHeight = 20;
+	this.text.lineWidth = 107;
+	this.text.parent = this;
+	this.text.setTransform(0,-18.35);
+	this.timeline.addTween(cjs.Tween.get(this.text).wait(90));
+	// Calque_1_copy_copy_copy
+	this.instance = new lib.Interpoler3("synched",0);
+	this.instance.setTransform(0.5,0);
+	this.instance._off = true;
+	this.instance_1 = new lib.Interpoler4("synched",0);
+	this.instance_1.setTransform(0.5,0,0.9495,0.9495);
+	this.instance_1._off = true;
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(12).to({_off:false},0).to({_off:true,scaleX:0.9495,scaleY:0.9495},10).wait(68));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(12).to({_off:false},10).to({regX:0.1,scaleX:1.2862,scaleY:1.2862,x:0.6,alpha:0},15).wait(53));
+	// Calque_1_copy_copy
+	this.instance_2 = new lib.Interpoler3("synched",0);
+	this.instance_2.setTransform(0.5,0);
+	this.instance_2._off = true;
+	this.instance_3 = new lib.Interpoler4("synched",0);
+	this.instance_3.setTransform(0.5,0,0.9495,0.9495);
+	this.instance_3._off = true;
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(8).to({_off:false},0).to({_off:true,scaleX:0.9495,scaleY:0.9495},10).wait(72));
+	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(8).to({_off:false},10).to({regX:0.1,scaleX:1.2862,scaleY:1.2862,x:0.6,alpha:0},15).wait(57));
+	// Calque_1_copy
+	this.instance_4 = new lib.Interpoler3("synched",0);
+	this.instance_4.setTransform(0.5,0);
+	this.instance_4._off = true;
+	this.instance_5 = new lib.Interpoler4("synched",0);
+	this.instance_5.setTransform(0.5,0,0.9495,0.9495);
+	this.instance_5._off = true;
+	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(4).to({_off:false},0).to({_off:true,scaleX:0.9495,scaleY:0.9495},10).wait(76));
+	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(4).to({_off:false},10).to({regX:0.1,scaleX:1.2862,scaleY:1.2862,x:0.6,alpha:0},15).wait(61));
+	// Calque_1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("#FFFFFF").ss(1,1,1).p("At5lCIbzAAIAAKFI7zAAg");
+	this.shape.setTransform(0.525,0);
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(90));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-115,-42.5,231.1,85);
+(lib.index_bg = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	// Calque_1
+	this.instance = new lib.full_bg();
+	this.instance.setTransform(1001,498,1,1,0,0,0,987,498);
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({x:15},499).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-972,0,2960,996);
 // stage content:
 (lib.Index = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
@@ -215,7 +330,6 @@ if (reversed == null) { reversed = false; }
 		if(this.totalFrames == 1) {
 			this.isSingleFrame = true;
 		}
-		document.body.style.backgroundColor = lib.properties.color;
 		document.querySelector(".loading").remove();
 		this.startButton.visible = true;
 		var _this = this;
@@ -232,9 +346,17 @@ if (reversed == null) { reversed = false; }
 	this.startButton.visible = false;
 	new cjs.ButtonHelper(this.startButton, 0, 1, 2, false, new lib.StartButton(), 3);
 	this.timeline.addTween(cjs.Tween.get(this.startButton).wait(1));
+	// popup
+	this.instance = new lib.popup_anim();
+	this.instance.setTransform(480,352.1,1,1,0,0,0,0.5,0);
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+	// bg
+	this.instance_1 = new lib.index_bg();
+	this.instance_1.setTransform(973,270,1,1,0,0,0,987,498);
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1));
 	this._renderFirstFrame();
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(871.3,518.2,-302.5,-225.80000000000007);
+p.nominalBounds = new cjs.Rectangle(480,42,1494,726);
 // library properties:
 lib.properties = {
 	id: '402608EF3A50094E910005AF11DE6713',
@@ -244,7 +366,8 @@ lib.properties = {
 	color: "#333333",
 	opacity: 1.00,
 	manifest: [
-		{src:"sounds/Track0.mp3", id:"Track0"}
+		{src:"images/index_atlas_NP_1.jpg?1691579654195", id:"index_atlas_NP_1"},
+		{src:"sounds/Track0.mp3?1691579654225", id:"Track0"}
 	],
 	preloads: []
 };
@@ -362,6 +485,7 @@ function init() {
 	var lib=comp.getLibrary();
 	var loader = new createjs.LoadQueue(false);
 	loader.installPlugin(createjs.Sound);
+	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
 	loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
 	var lib=comp.getLibrary();
 	loader.loadManifest(lib.properties.manifest);
@@ -370,6 +494,10 @@ function init() {
 	{
 		progressBar.value = Math.round(evt.progress * 100);
 	});
+}
+function handleFileLoad(evt, comp) {
+	var images=comp.getImages();	
+	if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
 }
 function handleComplete(evt,comp) {
 	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.

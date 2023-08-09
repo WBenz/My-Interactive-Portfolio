@@ -11,17 +11,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="authoring-tool" content="Adobe_Animate_CC">
-
-
-
-
 <title>gallery_menu</title>
 <!-- write your code here -->
+
 <style>
-body{
-background-color:#333333;
-}
-</style>
+         body {
+            background-image: url("bodyground.jpg");
+         }
+      </style>
+
 <style>
   #animation_container, #_preload_div_ {
 	position:absolute;
@@ -1853,20 +1851,6 @@ if (reversed == null) { reversed = false; }
 	props.loop = loop;
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
-	this.actionFrames = [0];
-	this.isSingleFrame = false;
-	// timeline functions:
-	this.frame_0 = function() {
-		if(this.isSingleFrame) {
-			return;
-		}
-		if(this.totalFrames == 1) {
-			this.isSingleFrame = true;
-		}
-		document.body.style.backgroundColor = lib.properties.color;
-	}
-	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
 	// Menu_scene
 	this.instance = new lib.menu_scene();
 	this.instance.setTransform(480,269.85,0.7275,0.7275);
