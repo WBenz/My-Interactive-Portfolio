@@ -12,9 +12,6 @@
 <meta charset="UTF-8">
 <meta name="authoring-tool" content="Adobe_Animate_CC">
 <title>index</title>
-
-
-
 <style>
 	@font-face
 	{
@@ -89,31 +86,6 @@
 	}
 	/* LOADER THIRD PARTY CODE END  */
 </style>
-
-<script>
-const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-if (isMobile) {
-  /* your code here */
-
-  this.frame_0 = function() {
-		if(this.isSingleFrame) {
-			return;
-		}
-		if(this.totalFrames == 1) {
-			this.isSingleFrame = true;
-		}
-		document.querySelector(".loading").remove();
-		this.startButton.visible = true;
-		var _this = this;
-		_this.startButton.on('click', function () {
-			window.open('mobile/index.html', '_self');
-		});
-	}
-
-}
-
-</script>
-
 <!-- write your code here -->
 <style>
   body {
@@ -394,8 +366,8 @@ lib.properties = {
 	color: "#333333",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_NP_1.jpg?1691579654195", id:"index_atlas_NP_1"},
-		{src:"sounds/Track0.mp3?1691579654225", id:"Track0"}
+		{src:"images/index_atlas_NP_1.jpg", id:"index_atlas_NP_1"},
+		{src:"sounds/Track0.mp3", id:"Track0"}
 	],
 	preloads: []
 };
