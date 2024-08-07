@@ -758,15 +758,16 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 	// Calque_2
-	this.text = new cjs.Text("RETOUR", "bold 22px 'Myriad Pro'");
-	this.text.lineHeight = 27;
+	this.text = new cjs.Text("RETOUR", "18px 'Times New Roman'");
+	this.text.textAlign = "center";
+	this.text.lineHeight = 22;
 	this.text.lineWidth = 82;
 	this.text.parent = this;
-	this.text.setTransform(-25.75,41.1,1,1,-90);
+	this.text.setTransform(-25.75,0,1,1,-90);
 	this.timeline.addTween(cjs.Tween.get(this.text).wait(1));
 	this._renderFirstFrame();
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-27.7,-43.1,30.4,86.2);
+p.nominalBounds = new cjs.Rectangle(-27.7,-43.1,27,86.2);
 (lib.Interpoler40 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -1250,7 +1251,7 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 	// Calque_2
-	this.text = new cjs.Text("TAPETUM", "8px 'Myriad Pro'");
+	this.text = new cjs.Text("TAPETUM", "8px 'Arial'");
 	this.text.lineHeight = 12;
 	this.text.lineWidth = 56;
 	this.text.parent = this;
@@ -1275,7 +1276,7 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 	// Calque_2
-	this.text = new cjs.Text("LES VOGES", "8px 'Myriad Pro'");
+	this.text = new cjs.Text("LES VOGES", "8px 'Arial'");
 	this.text.lineHeight = 12;
 	this.text.lineWidth = 56;
 	this.text.parent = this;
@@ -1300,7 +1301,7 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 	// Calque_2
-	this.text = new cjs.Text("DIGIPLUS", "8px 'Myriad Pro'");
+	this.text = new cjs.Text("DIGIPLUS", "8px 'Arial'");
 	this.text.lineHeight = 12;
 	this.text.lineWidth = 56;
 	this.text.parent = this;
@@ -1325,7 +1326,7 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 	// Calque_4
-	this.text = new cjs.Text("ASTROLABE", "8px 'Myriad Pro'");
+	this.text = new cjs.Text("ASTROLABE", "8px 'Arial'");
 	this.text.lineHeight = 12;
 	this.text.lineWidth = 56;
 	this.text.parent = this;
@@ -1568,7 +1569,7 @@ if (reversed == null) { reversed = false; }
 	for(var shapedInstanceItr = 0; shapedInstanceItr < maskedShapeInstanceList.length; shapedInstanceItr++) {
 		maskedShapeInstanceList[shapedInstanceItr].mask = mask;
 	}
-	this.timeline.addTween(cjs.Tween.get(this.return_btn).to({x:5.55,y:0,alpha:1},30,cjs.Ease.quintOut).wait(1).to({regX:-12.5,x:-14.75},0).wait(1).to({x:-22.4},0).wait(1).to({x:-29.75},0).wait(1).to({x:-36.85},0).wait(1).to({x:-43.6},0).wait(1).to({x:-50},0).wait(1).to({x:-56},0).wait(1).to({regX:0,x:-49.1},0).to({x:65.75},1).wait(1).to({regX:-12.5,x:27.55},0).wait(1).to({x:12.4},0).wait(1).to({x:3.65},0).wait(1).to({x:-1.4},0).wait(1).to({x:-4.2},0).wait(1).to({x:-5.75},0).wait(1).to({x:-6.5},0).wait(1).to({x:-6.85},0).wait(1).to({x:-6.95},0).wait(1).to({regX:0,x:5.55},0).to({x:65.15},10,cjs.Ease.quadOut).to({x:-49.1},1).to({x:5.55},9,cjs.Ease.quintOut).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.return_btn).to({x:5.55,y:0,alpha:1},30,cjs.Ease.quintOut).wait(1).to({regX:-14.2,x:-16.45},0).wait(1).to({x:-24.1},0).wait(1).to({x:-31.45},0).wait(1).to({x:-38.55},0).wait(1).to({x:-45.3},0).wait(1).to({x:-51.7},0).wait(1).to({x:-57.7},0).wait(1).to({regX:0,x:-49.1},0).to({x:65.75},1).wait(1).to({regX:-14.2,x:25.85},0).wait(1).to({x:10.7},0).wait(1).to({x:1.95},0).wait(1).to({x:-3.1},0).wait(1).to({x:-5.9},0).wait(1).to({x:-7.45},0).wait(1).to({x:-8.2},0).wait(1).to({x:-8.55},0).wait(1).to({x:-8.65},0).wait(1).to({regX:0,x:5.55},0).to({x:65.15},10,cjs.Ease.quadOut).to({x:-49.1},1).to({x:5.55},9,cjs.Ease.quintOut).wait(1));
 	// Calque_4
 	this.instance = new lib.hover();
 	this.instance.setTransform(10.2,-446.3,0.5457,1,0,0,0,75.5,45);
@@ -2547,7 +2548,6 @@ function handleComplete(evt,comp) {
 </script>
 <!-- write your code here -->
 
-
 <div class="book">
 	<div class="book__pg-shadow"></div>
 	<div class="book__pg"></div>
@@ -2832,8 +2832,6 @@ body {
 }
 
 </style>
-
-
 
 </head>
 <body onload="init();" style="margin:0px;">
