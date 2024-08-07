@@ -526,24 +526,12 @@ if (reversed == null) { reversed = false; }
 	cjs.MovieClip.apply(this,[props]);
 	// Calque_1
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#000000").s().p("AgZByIAAi4Ig+AAIAAgrICvAAIAAArIg/AAIAAC4g");
-	this.shape.setTransform(50.275,-0.45);
-	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#000000").s().p("AAiBzQgDgEgEgPQgEgNgFgVQgDgPgFgHQgFgJgGgCQgHgEgLAAIgPAAIAABaIg0AAIAAjgQANgDASgBQARgBAWAAQAYgBASAFQATAEALAKQALAIAGAMQAFAMAAAQQAAAPgGALQgGALgKAIQgJAGgKAEIAAABQANAEAGALQAIAMAEAQIAHAaIAHAYQACAKACAEgAgahLIgIABIAAA+IAUAAQASABAMgKQAKgIABgPQgBgQgKgHQgKgJgRABIgPAAg");
-	this.shape_1.setTransform(23.7,-0.55);
-	this.shape_2 = new cjs.Shape();
-	this.shape_2.graphics.f("#000000").s().p("AAwByIgRg6IhBAAIgQA6Ig2AAIBGjjIBDAAIBHDjgAAXARIgOgwIgGgWIgEgWIgCAAIgEAXIgGAVIgNAwIAxAAg");
-	this.shape_2.setTransform(-6.45,-0.45);
-	this.shape_3 = new cjs.Shape();
-	this.shape_3.graphics.f("#000000").s().p("AgZByIAAi4Ig+AAIAAgrICvAAIAAArIg/AAIAAC4g");
-	this.shape_3.setTransform(-32.375,-0.45);
-	this.shape_4 = new cjs.Shape();
-	this.shape_4.graphics.f("#000000").s().p("AgyBxQgSgEgJgGIAKgqQAKAGAQAEQAOAEARABQARgBAJgHQAKgGAAgMQAAgKgJgHQgJgIgUgGQgdgLgRgPQgQgQgBgaQAAgTALgQQAKgPAUgJQATgJAaAAQATAAAPAEQAOACAKAGIgLApQgHgDgMgEQgMgDgRgBQgQABgIAGQgIAHAAAJQAAAKAKAHQAKAHAVAHQAfAMAOAPQAPAQgBAZQAAATgKARQgKAPgUAKQgUAKgfAAQgUgBgRgEg");
-	this.shape_4.setTransform(-58.8242,-0.45);
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
+	this.shape.graphics.f("#000000").s().p("AosBgQgSgIgLgQQgKgQgBgUIAZgCQACAPAHAJQAGAKANAGQAOAGASAAQAPAAALgFQAMgEAFgIQAGgIAAgJQAAgKgGgHQgFgHgNgEQgHgEgcgGQgcgHgLgFQgOgHgHgLQgHgMgBgNQAAgQAJgNQAJgNARgHQAQgHAVAAQAWAAAQAIQARAHAKAOQAJAOAAARIgZACQgCgTgLgKQgMgJgYAAQgYAAgLAJQgLAIABANQAAALAHAHQAIAHAgAHQAgAHAMAGQASAHAIAMQAJANAAAQQAAAQgJAOQgJAOgSAIQgRAIgVAAQgcAAgSgIgAH4BkIAAiwIhCAAIAAgXICfAAIAAAXIhDAAIAACwgAFABkIgbgpIgTgcQgHgKgHgDQgFgEgHgCIgOgBIgfAAIAABZIgbAAIAAjHIBZAAQAbAAAOAFQAOAGAIANQAJAOAAARQAAAVgOAOQgOAOgcAEQAKAFAFAFQAMALALAQIAiA2gADLgLIA5AAQASAAALgDQAJgEAGgIQAFgJABgJQAAgPgLgJQgKgJgXAAIg/AAgAAsBkIgXg8IhSAAIgXA8IgcAAIBNjHIAdAAIBRDHgAgggoIgWA6IBDAAIgUg3IgPgpQgDATgHATgAkNBkIAAiwIhCAAIAAgXICfAAIAAAXIhDAAIAACwg");
+	this.shape.setTransform(-3.6,-4.175);
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
 	this._renderFirstFrame();
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-70,-21.5,140.1,43);
+p.nominalBounds = new cjs.Rectangle(-63.3,-14.5,119.4,20.7);
 (lib.power_animation_off = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -612,12 +600,7 @@ if (reversed == null) { reversed = false; }
 		});
 	}
 	this.frame_14 = function() {
-		var _this = this;
-		/*
-		Arrêter un clip/une vidéo
-		Permet d’arrêter la vidéo ou le clip spécifié.
-		*/
-		_this.stop();
+		this.stop();
 	}
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(14).call(this.frame_14).wait(16));
@@ -932,7 +915,6 @@ function handleComplete(evt,comp) {
 </script>
 <!-- write your code here -->
 
-
 <div class="book">
 	<div class="book__pg-shadow"></div>
 	<div class="book__pg"></div>
@@ -1217,8 +1199,6 @@ body {
 }
 
 </style>
-
-
 
 </head>
 <body onload="init();" style="margin:0px;">
