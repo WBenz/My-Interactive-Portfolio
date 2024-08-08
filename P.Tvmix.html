@@ -348,15 +348,16 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 	// Calque_1
-	this.text = new cjs.Text("RETOUR", "bold 16px 'Myriad Pro'", "#FFFFFF");
-	this.text.lineHeight = 20;
+	this.text = new cjs.Text("RETOUR", "14px 'Arial'", "#FFFFFF");
+	this.text.textAlign = "center";
+	this.text.lineHeight = 18;
 	this.text.lineWidth = 60;
 	this.text.parent = this;
-	this.text.setTransform(-9.15,29.75,1,1,-90);
+	this.text.setTransform(-9.15,0,1,1,-90);
 	this.timeline.addTween(cjs.Tween.get(this.text).wait(1));
 	this._renderFirstFrame();
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-11.1,-31.7,22.299999999999997,63.5);
+p.nominalBounds = new cjs.Rectangle(-11.1,-31.7,20.1,63.5);
 (lib.Interpoler3 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -368,15 +369,16 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 	// Calque_1
-	this.text = new cjs.Text("RETOUR", "bold 16px 'Myriad Pro'", "#FFFFFF");
-	this.text.lineHeight = 20;
+	this.text = new cjs.Text("RETOUR", "14px 'Arial'", "#FFFFFF");
+	this.text.textAlign = "center";
+	this.text.lineHeight = 18;
 	this.text.lineWidth = 60;
 	this.text.parent = this;
-	this.text.setTransform(-9.15,29.75,1,1,-90);
+	this.text.setTransform(-9.15,0,1,1,-90);
 	this.timeline.addTween(cjs.Tween.get(this.text).wait(1));
 	this._renderFirstFrame();
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-11.1,-31.7,22.299999999999997,63.5);
+p.nominalBounds = new cjs.Rectangle(-11.1,-31.7,19.6,63.5);
 (lib.Interpoler1 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -527,15 +529,15 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(40));
 	// Calque_2
 	this.instance_1 = new lib.Interpoler3("synched",0);
-	this.instance_1.setTransform(20.65,34.75);
+	this.instance_1.setTransform(32.4,34.75);
 	this.instance_2 = new lib.Interpoler4("synched",0);
 	this.instance_2.setTransform(16.15,34.75);
 	this.instance_2._off = true;
 	var instance_2Filter_1 = new cjs.ColorFilter(1,1,1,1,0,0,0,0);
 	this.instance_2.filters = [instance_2Filter_1];
-	this.instance_2.cache(-13,-34,26,68);
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).to({_off:true,x:16.15},19,cjs.Ease.quintInOut).to({_off:false,x:20.65},20,cjs.Ease.quintInOut).wait(1));
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).to({_off:false},19,cjs.Ease.quintInOut).to({_off:true,x:20.65},20,cjs.Ease.quintInOut).wait(1));
+	this.instance_2.cache(-13,-34,24,68);
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).to({_off:true,x:16.15},19,cjs.Ease.quintInOut).to({_off:false,x:32.4},20,cjs.Ease.quintInOut).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).to({_off:false},19,cjs.Ease.quintInOut).to({_off:true,x:32.4},20,cjs.Ease.quintInOut).wait(1));
 	this.timeline.addTween(cjs.Tween.get(instance_2Filter_1).to(new cjs.ColorFilter(0,0,0,1,99,122,187,0), 19).to(new cjs.ColorFilter(1,1,1,1,0,0,0,0), 20,cjs.Ease.quintInOut).wait(1));
 	// Calque_1
 	this.instance_3 = new lib.back_btn();
@@ -547,15 +549,15 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(40));
 	this.timeline.addTween(cjs.Tween.get(instance_3Filter_2).to(new cjs.ColorFilter(0,0,0,1,255,255,255,0), 19,cjs.Ease.quintInOut).to(new cjs.ColorFilter(1,1,1,1,0,0,0,0), 20,cjs.Ease.quintInOut).wait(1));
 	this.filterCacheList = [];
-	this.filterCacheList.push({instance: this.instance_2, startFrame:1, endFrame:19, x:-13, y:-34, w:26, h:68});
-	this.filterCacheList.push({instance: this.instance_2, startFrame:0, endFrame:0, x:-13, y:-34, w:26, h:68});
-	this.filterCacheList.push({instance: this.instance_2, startFrame:20, endFrame:39, x:-13, y:-34, w:26, h:68});
+	this.filterCacheList.push({instance: this.instance_2, startFrame:1, endFrame:19, x:-13, y:-34, w:24, h:68});
+	this.filterCacheList.push({instance: this.instance_2, startFrame:0, endFrame:0, x:-13, y:-34, w:24, h:68});
+	this.filterCacheList.push({instance: this.instance_2, startFrame:20, endFrame:39, x:-13, y:-34, w:24, h:68});
 	this.filterCacheList.push({instance: this.instance_3, startFrame:1, endFrame:19, x:-24, y:-52, w:48, h:104});
 	this.filterCacheList.push({instance: this.instance_3, startFrame:0, endFrame:0, x:-24, y:-52, w:48, h:104});
 	this.filterCacheList.push({instance: this.instance_3, startFrame:20, endFrame:39, x:-24, y:-52, w:48, h:104});
 	this._renderFirstFrame();
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0,0,31.9,69.9);
+p.nominalBounds = new cjs.Rectangle(0,0,41.4,69.9);
 (lib.acuapor_gallery = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -755,7 +757,7 @@ if (reversed == null) { reversed = false; }
 	this.back_btn_anim.name = "back_btn_anim";
 	this.back_btn_anim.setTransform(127.45,446.75,1,1,0,0,0,15.4,35);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_2}]},59).to({state:[{t:this.instance_2}]},27).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.instance_2}]},1).to({state:[{t:this.back_btn_anim}]},1).wait(1));
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(59).to({_off:false},0).to({x:124.7,alpha:1},27,cjs.Ease.quadIn).wait(1).to({x:126.25},0).wait(1).to({x:127.15},0).to({_off:true},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(59).to({_off:false},0).to({x:124.7,alpha:1},27,cjs.Ease.quadIn).wait(1).to({regX:19.4,x:130.25},0).wait(1).to({x:131.15},0).to({_off:true},1).wait(1));
 	this.instance_2.addEventListener("tick", AdobeAn.handleFilterCache);
 	this.back_btn_anim.addEventListener("tick", AdobeAn.handleFilterCache);
 	// BG_anim
@@ -936,8 +938,6 @@ function handleComplete(evt,comp) {
 }
 </script>
 <!-- write your code here -->
-
-
 
 <div class="book">
 	<div class="book__pg-shadow"></div>
@@ -1223,8 +1223,6 @@ body {
 }
 
 </style>
-
-
 
 </head>
 <body onload="init();" style="margin:0px;">
