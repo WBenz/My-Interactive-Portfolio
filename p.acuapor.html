@@ -239,26 +239,6 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(-18,-15.3,36.1,30.700000000000003);
-(lib.Interpoler6 = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-	// Calque_1
-	this.text = new cjs.Text("RETOUR", "bold 16px 'Myriad Pro'", "#FFFFFF");
-	this.text.lineHeight = 20;
-	this.text.lineWidth = 59;
-	this.text.parent = this;
-	this.text.setTransform(-9.15,29.7,1,1,-90);
-	this.timeline.addTween(cjs.Tween.get(this.text).wait(1));
-	this._renderFirstFrame();
-}).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-11.1,-31.7,22.299999999999997,63.4);
 (lib.Interpoler5 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -270,15 +250,16 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 	// Calque_1
-	this.text = new cjs.Text("RETOUR", "bold 16px 'Myriad Pro'", "#FFFFFF");
-	this.text.lineHeight = 20;
+	this.text = new cjs.Text("RETOUR", "14px 'Arial'", "#FFFFFF");
+	this.text.textAlign = "center";
+	this.text.lineHeight = 18;
 	this.text.lineWidth = 59;
 	this.text.parent = this;
-	this.text.setTransform(-9.15,29.7,1,1,-90);
+	this.text.setTransform(-9.15,0,1,1,-90);
 	this.timeline.addTween(cjs.Tween.get(this.text).wait(1));
 	this._renderFirstFrame();
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-11.1,-31.7,22.299999999999997,63.4);
+p.nominalBounds = new cjs.Rectangle(-11.1,-31.7,19.6,63.4);
 (lib.Interpoler2 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -374,31 +355,27 @@ if (reversed == null) { reversed = false; }
 	// Calque_2
 	this.instance_1 = new lib.Interpoler5("synched",0);
 	this.instance_1.setTransform(16.9,34.95);
-	this.instance_2 = new lib.Interpoler6("synched",0);
-	this.instance_2.setTransform(16.9,34.95);
-	this.instance_2._off = true;
-	var instance_2Filter_1 = new cjs.ColorFilter(1,1,1,1,0,0,0,0);
-	this.instance_2.filters = [instance_2Filter_1];
-	this.instance_2.cache(-13,-34,26,67);
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).to({_off:true},19).to({_off:false},20).wait(1));
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).to({_off:false},19).to({_off:true},20).wait(1));
-	this.timeline.addTween(cjs.Tween.get(instance_2Filter_1).to(new cjs.ColorFilter(0,0,0,1,51,153,255,0), 19).to(new cjs.ColorFilter(1,1,1,1,0,0,0,0), 20).wait(1));
+	var instance_1Filter_1 = new cjs.ColorFilter(1,1,1,1,0,0,0,0);
+	this.instance_1.filters = [instance_1Filter_1];
+	this.instance_1.cache(-13,-34,24,67);
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).to({startPosition:0},19).to({startPosition:0},20).wait(1));
+	this.timeline.addTween(cjs.Tween.get(instance_1Filter_1).to(new cjs.ColorFilter(0,0,0,1,51,153,255,0), 19).to(new cjs.ColorFilter(1,1,1,1,0,0,0,0), 20).wait(1));
 	// Calque_1
-	this.instance_3 = new lib.back_btn();
-	this.instance_3.setTransform(30.8,69.9,0.6995,0.6995,0,0,0,22,50);
-	var instance_3Filter_2 = new cjs.ColorFilter(1,1,1,1,0,0,0,0);
-	this.instance_3.filters = [instance_3Filter_2];
-	this.instance_3.cache(-24,-52,48,104);
-	new cjs.ButtonHelper(this.instance_3, 0, 1, 1);
-	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(40));
-	this.timeline.addTween(cjs.Tween.get(instance_3Filter_2).to(new cjs.ColorFilter(0,0,0,1,255,255,255,0), 19).to(new cjs.ColorFilter(1,1,1,1,0,0,0,0), 20).wait(1));
+	this.instance_2 = new lib.back_btn();
+	this.instance_2.setTransform(30.8,69.9,0.6995,0.6995,0,0,0,22,50);
+	var instance_2Filter_2 = new cjs.ColorFilter(1,1,1,1,0,0,0,0);
+	this.instance_2.filters = [instance_2Filter_2];
+	this.instance_2.cache(-24,-52,48,104);
+	new cjs.ButtonHelper(this.instance_2, 0, 1, 1);
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(40));
+	this.timeline.addTween(cjs.Tween.get(instance_2Filter_2).to(new cjs.ColorFilter(0,0,0,1,255,255,255,0), 19).to(new cjs.ColorFilter(1,1,1,1,0,0,0,0), 20).wait(1));
 	this.filterCacheList = [];
-	this.filterCacheList.push({instance: this.instance_2, startFrame:1, endFrame:19, x:-13, y:-34, w:26, h:67});
-	this.filterCacheList.push({instance: this.instance_2, startFrame:0, endFrame:0, x:-13, y:-34, w:26, h:67});
-	this.filterCacheList.push({instance: this.instance_2, startFrame:20, endFrame:39, x:-13, y:-34, w:26, h:67});
-	this.filterCacheList.push({instance: this.instance_3, startFrame:1, endFrame:19, x:-24, y:-52, w:48, h:104});
-	this.filterCacheList.push({instance: this.instance_3, startFrame:0, endFrame:0, x:-24, y:-52, w:48, h:104});
-	this.filterCacheList.push({instance: this.instance_3, startFrame:20, endFrame:39, x:-24, y:-52, w:48, h:104});
+	this.filterCacheList.push({instance: this.instance_1, startFrame:1, endFrame:19, x:-13, y:-34, w:24, h:67});
+	this.filterCacheList.push({instance: this.instance_1, startFrame:0, endFrame:0, x:-13, y:-34, w:24, h:67});
+	this.filterCacheList.push({instance: this.instance_1, startFrame:20, endFrame:39, x:-13, y:-34, w:24, h:67});
+	this.filterCacheList.push({instance: this.instance_2, startFrame:1, endFrame:19, x:-24, y:-52, w:48, h:104});
+	this.filterCacheList.push({instance: this.instance_2, startFrame:0, endFrame:0, x:-24, y:-52, w:48, h:104});
+	this.filterCacheList.push({instance: this.instance_2, startFrame:20, endFrame:39, x:-24, y:-52, w:48, h:104});
 	this._renderFirstFrame();
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(0,0,30.8,69.9);
@@ -1042,8 +1019,6 @@ body {
 }
 
 </style>
-
-
 
 </head>
 <body onload="init();" style="margin:0px;">
