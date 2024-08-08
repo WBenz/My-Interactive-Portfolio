@@ -13,10 +13,6 @@
 <meta name="authoring-tool" content="Adobe_Animate_CC">
 <title>gallery_menu</title>
 <!-- write your code here -->
-
-
-
-
 <style>
   #animation_container {
 	position:absolute;
@@ -1031,7 +1027,7 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 	// Calque_1
-	this.text = new cjs.Text("RETOUR", "bold 72px 'Myriad Pro'", "#FFFFFF");
+	this.text = new cjs.Text("RETOUR", "72px 'Arial'", "#FFFFFF");
 	this.text.lineHeight = 85;
 	this.text.lineWidth = 276;
 	this.text.parent = this;
@@ -1039,7 +1035,7 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.text).wait(1));
 	this._renderFirstFrame();
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-139.9,-43.3,279.9,86.6);
+p.nominalBounds = new cjs.Rectangle(-139.9,-43.3,279.9,166.89999999999998);
 (lib.Interpoler4 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -1220,7 +1216,7 @@ if (reversed == null) { reversed = false; }
 		_this.gotoAndPlay(64);
 		});
 		_this.web_book_btn_trigger.on('click', function(){
-		window.open('web_menu.html', '_self');
+		window.open('web_pages.html', '_self');
 		});
 	}
 	this.frame_63 = function() {
@@ -1473,7 +1469,7 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.instance_38).wait(34).to({_off:false},0).to({y:-377.35},10,cjs.Ease.quadOut).to({y:-405.55},5,cjs.Ease.quadOut).to({y:-375.6},10,cjs.Ease.quadOut).to({y:-405.4},10,cjs.Ease.quadOut).wait(1).to({regX:32.8,regY:31.8,x:-575.25,y:-366.2},0).wait(1).to({y:-358.3},0).wait(1).to({y:-350.7},0).wait(1).to({regX:1,regY:0.5,x:-607.05,y:-375},0).wait(1).to({regX:32.8,regY:31.8,x:-575.25,y:-425.65},0).wait(1).to({y:-497.05},0).wait(1).to({y:-558.1},0).wait(1).to({y:-609.5},0).wait(1).to({y:-652.2},0).wait(1).to({y:-687.15},0).wait(1).to({y:-715.3},0).wait(1).to({y:-737.45},0).wait(1).to({y:-754.25},0).wait(1).to({y:-766.35},0).wait(1).to({regX:1,regY:0.5,x:-607.05,y:-805.65},0).to({_off:true},1).wait(20));
 	this._renderFirstFrame();
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-726,-1112.1,1400.6,1561.3);
+p.nominalBounds = new cjs.Rectangle(-726,-1112.1,1400.6,1604.3);
 (lib.motion_book_btn = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -2219,7 +2215,6 @@ function handleComplete(evt,comp) {
 </script>
 <!-- write your code here -->
 
-
 <div class="book">
 	<div class="book__pg-shadow"></div>
 	<div class="book__pg"></div>
@@ -2504,8 +2499,6 @@ body {
 }
 
 </style>
-
-
 
 </head>
 <body onload="init();" style="margin:0px;">
