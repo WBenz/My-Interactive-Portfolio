@@ -13,10 +13,6 @@
 <meta name="authoring-tool" content="Adobe_Animate_CC">
 <title>HMUP</title>
 <!-- write your code here -->
-
-
-
-
 <style>
   #animation_container {
 	position:absolute;
@@ -108,7 +104,7 @@ if (reversed == null) { reversed = false; }
 	props.loop = loop;
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
-	// Calque_1
+	// Calque_3
 	this.instance = new lib.phone_mockup();
 	this.instance.setTransform(-139.9,-250,0.2273,0.2273);
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
@@ -179,7 +175,7 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 	// Calque_1
-	this.text = new cjs.Text("RETOUR", "bold 60px 'Myriad Pro'", "#FFFFFF");
+	this.text = new cjs.Text("RETOUR", "60px 'Arial'", "#FFFFFF");
 	this.text.lineHeight = 71;
 	this.text.lineWidth = 230;
 	this.text.parent = this;
@@ -187,7 +183,7 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.text).wait(1));
 	this._renderFirstFrame();
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-117.2,-36.4,234.4,72.8);
+p.nominalBounds = new cjs.Rectangle(-117.2,-36.4,234.4,140);
 (lib.Interpoler3 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -199,7 +195,7 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 	// Calque_1
-	this.text = new cjs.Text("RETOUR", "bold 60px 'Myriad Pro'", "#FFFFFF");
+	this.text = new cjs.Text("RETOUR", "60px 'Arial'", "#FFFFFF");
 	this.text.lineHeight = 71;
 	this.text.lineWidth = 230;
 	this.text.parent = this;
@@ -207,7 +203,7 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.text).wait(1));
 	this._renderFirstFrame();
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-117.2,-36.4,234.4,72.8);
+p.nominalBounds = new cjs.Rectangle(-117.2,-36.4,234.4,140);
 (lib.Interpoler2 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -687,7 +683,7 @@ if (reversed == null) { reversed = false; }
 	this.filterCacheList.push({instance: this.instance_4, startFrame:20, endFrame:39, x:-22, y:-22, w:44, h:44});
 	this._renderFirstFrame();
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-397.3,-62.1,780.3,117.9);
+p.nominalBounds = new cjs.Rectangle(-397.3,-62.1,780.3,172);
 // stage content:
 (lib.PHMUP = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
@@ -779,44 +775,6 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.nextButton},{t:this.prevButton}]}).wait(180));
 	this.prevButton.addEventListener("tick", AdobeAn.handleFilterCache);
 	this.nextButton.addEventListener("tick", AdobeAn.handleFilterCache);
-	// hmup_01
-	this.instance = new lib.hmup_01();
-	this.instance.setTransform(484,185.7,1.3008,1.2974);
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({regX:0.2,scaleX:0.9216,scaleY:0.9192,x:157.55,y:185.35,alpha:0.5},29,cjs.Ease.quadInOut).to({scaleX:0.3861,scaleY:0.3851,x:117.6,alpha:0},30,cjs.Ease.quadInOut).to({_off:true},1).wait(120));
-	// hmup_02
-	this.instance_1 = new lib.hmup_02();
-	this.instance_1.setTransform(802.65,185.95,0.723,0.723);
-	this.instance_1.alpha = 0.5;
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).to({scaleX:1,scaleY:1,x:484,y:185.7,alpha:1},29,cjs.Ease.quadInOut).to({scaleX:0.7109,scaleY:0.7109,x:157.6,y:185.75,alpha:0.5},30,cjs.Ease.quadInOut).to({regY:0.1,scaleX:0.2973,scaleY:0.2973,x:116.6,y:186.75,alpha:0},30,cjs.Ease.quadInOut).to({_off:true},1).wait(90));
-	// hmup_03
-	this.instance_2 = new lib.hmup_03();
-	this.instance_2.setTransform(844.15,185.5,0.2974,0.2974,0,0,0,0,0.1);
-	this.instance_2.alpha = 0;
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).to({regX:0.1,regY:0.2,scaleX:0.7077,scaleY:0.7077,x:804.2,y:185.55,alpha:0.5},29,cjs.Ease.quadInOut).to({scaleX:1,scaleY:1,x:484.15,alpha:1},30,cjs.Ease.quadInOut).to({regY:0.3,scaleX:0.7077,scaleY:0.7077,x:156.65,y:186.5,alpha:0.5},30,cjs.Ease.quadInOut).to({regY:0.4,scaleX:0.2974,scaleY:0.2974,x:116.6,y:185.4,alpha:0},30,cjs.Ease.quadInOut).to({_off:true},1).wait(60));
-	// hmup_04
-	this.instance_3 = new lib.hmup_04();
-	this.instance_3.setTransform(844.15,185.75,0.2974,0.2974);
-	this.instance_3.alpha = 0;
-	this.instance_3._off = true;
-	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(29).to({_off:false},0).to({scaleX:0.7077,scaleY:0.7077,x:804.15,y:185.4,alpha:0.5},30,cjs.Ease.quadInOut).to({regX:0.1,regY:0.1,scaleX:1,scaleY:1,x:484.1,y:186.4,alpha:1},30,cjs.Ease.quadInOut).to({scaleX:0.7077,scaleY:0.7077,x:156.6,y:185.35,alpha:0.5},30,cjs.Ease.quadInOut).to({scaleX:0.2974,scaleY:0.2974,x:117.55,alpha:0},30,cjs.Ease.quadInOut).to({_off:true},1).wait(30));
-	// hmup_05
-	this.instance_4 = new lib.hmup_05();
-	this.instance_4.setTransform(844.2,185.3,0.2974,0.2974,0,0,0,0.1,0.1);
-	this.instance_4.alpha = 0;
-	this.instance_4._off = true;
-	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(59).to({_off:false},0).to({regX:0.2,regY:0.2,scaleX:0.7077,scaleY:0.7077,x:804.3,y:186.4,alpha:0.5},30,cjs.Ease.quadInOut).to({scaleX:0.9999,scaleY:0.9999,x:484.2,y:185.4,alpha:1},30,cjs.Ease.quadInOut).to({regX:0.3,regY:0.3,scaleX:0.7077,scaleY:0.7077,x:157.7,y:185.35,alpha:0.5},30,cjs.Ease.quadInOut).to({regX:0.5,regY:0.5,scaleX:0.2974,scaleY:0.2974,x:116.6,y:185.25,alpha:0},30,cjs.Ease.quadInOut).wait(1));
-	// hmup_06
-	this.instance_5 = new lib.hmup_06();
-	this.instance_5.setTransform(844.2,186.7,0.2974,0.2974,0,0,0,0.1,0);
-	this.instance_5.alpha = 0;
-	this.instance_5._off = true;
-	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(89).to({_off:false},0).to({regX:0.2,regY:0.1,scaleX:0.7077,scaleY:0.7077,x:804.3,y:185.35,alpha:0.5},30,cjs.Ease.quadInOut).to({scaleX:1,scaleY:1,x:484.2,y:185.4,alpha:1},30,cjs.Ease.quadInOut).to({regX:0.3,scaleX:0.7077,scaleY:0.7077,x:156.65,y:185.2,alpha:0.5},30,cjs.Ease.quadInOut).wait(1));
-	// hmup_07
-	this.instance_6 = new lib.hmup_07();
-	this.instance_6.setTransform(844.15,185.35,0.2974,0.2974,0,0,0,0,0.1);
-	this.instance_6.alpha = 0;
-	this.instance_6._off = true;
-	this.timeline.addTween(cjs.Tween.get(this.instance_6).wait(119).to({_off:false},0).to({regX:0.1,regY:0.2,scaleX:0.7077,scaleY:0.7077,x:804.2,y:185.3,alpha:0.5},30,cjs.Ease.quadInOut).to({scaleX:1,scaleY:1,x:484.1,alpha:1},30,cjs.Ease.quadInOut).wait(1));
 	// back_btn_anim
 	this.back_btn_anim = new lib.back_btn_anim();
 	this.back_btn_anim.name = "back_btn_anim";
@@ -824,9 +782,52 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.back_btn_anim).wait(180));
 	this.back_btn_anim.addEventListener("tick", AdobeAn.handleFilterCache);
 	// phone_mockup
-	this.instance_7 = new lib.phone_mockup_1();
-	this.instance_7.setTransform(480,234);
-	this.timeline.addTween(cjs.Tween.get(this.instance_7).wait(180));
+	this.instance = new lib.phone_mockup_1();
+	this.instance.setTransform(480,234);
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(180));
+	// hmup_01
+	this.instance_1 = new lib.hmup_01();
+	this.instance_1.setTransform(484,185.7,1.3008,1.2974);
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).to({regX:0.2,scaleX:0.9216,scaleY:0.9192,x:157.55,y:185.35,alpha:0.5},29,cjs.Ease.quadInOut).to({scaleX:0.3861,scaleY:0.3851,x:117.6,alpha:0},30,cjs.Ease.quadInOut).to({_off:true},1).wait(120));
+	// hmup_02
+	this.instance_2 = new lib.hmup_02();
+	this.instance_2.setTransform(802.65,185.95,0.723,0.723);
+	this.instance_2.alpha = 0.5;
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).to({scaleX:1,scaleY:1,x:484,y:185.7,alpha:1},29,cjs.Ease.quadInOut).to({scaleX:0.7109,scaleY:0.7109,x:157.6,y:185.75,alpha:0.5},30,cjs.Ease.quadInOut).to({regY:0.1,scaleX:0.2973,scaleY:0.2973,x:116.6,y:186.75,alpha:0},30,cjs.Ease.quadInOut).to({_off:true},1).wait(90));
+	// hmup_03
+	this.instance_3 = new lib.hmup_03();
+	this.instance_3.setTransform(844.15,185.5,0.2974,0.2974,0,0,0,0,0.1);
+	this.instance_3.alpha = 0;
+	this.timeline.addTween(cjs.Tween.get(this.instance_3).to({regX:0.1,regY:0.2,scaleX:0.7077,scaleY:0.7077,x:804.2,y:185.55,alpha:0.5},29,cjs.Ease.quadInOut).to({scaleX:1,scaleY:1,x:484.15,alpha:1},30,cjs.Ease.quadInOut).to({regY:0.3,scaleX:0.7077,scaleY:0.7077,x:156.65,y:186.5,alpha:0.5},30,cjs.Ease.quadInOut).to({regY:0.4,scaleX:0.2974,scaleY:0.2974,x:116.6,y:185.4,alpha:0},30,cjs.Ease.quadInOut).to({_off:true},1).wait(60));
+	// hmup_04
+	this.instance_4 = new lib.hmup_04();
+	this.instance_4.setTransform(844.15,185.75,0.2974,0.2974);
+	this.instance_4.alpha = 0;
+	this.instance_4._off = true;
+	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(29).to({_off:false},0).to({scaleX:0.7077,scaleY:0.7077,x:804.15,y:185.4,alpha:0.5},30,cjs.Ease.quadInOut).to({regX:0.1,regY:0.1,scaleX:1,scaleY:1,x:484.1,y:186.4,alpha:1},30,cjs.Ease.quadInOut).to({scaleX:0.7077,scaleY:0.7077,x:156.6,y:185.35,alpha:0.5},30,cjs.Ease.quadInOut).to({scaleX:0.2974,scaleY:0.2974,x:117.55,alpha:0},30,cjs.Ease.quadInOut).to({_off:true},1).wait(30));
+	// hmup_05
+	this.instance_5 = new lib.hmup_05();
+	this.instance_5.setTransform(844.2,185.3,0.2974,0.2974,0,0,0,0.1,0.1);
+	this.instance_5.alpha = 0;
+	this.instance_5._off = true;
+	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(59).to({_off:false},0).to({regX:0.2,regY:0.2,scaleX:0.7077,scaleY:0.7077,x:804.3,y:186.4,alpha:0.5},30,cjs.Ease.quadInOut).to({scaleX:0.9999,scaleY:0.9999,x:484.2,y:185.4,alpha:1},30,cjs.Ease.quadInOut).to({regX:0.3,regY:0.3,scaleX:0.7077,scaleY:0.7077,x:157.7,y:185.35,alpha:0.5},30,cjs.Ease.quadInOut).to({regX:0.5,regY:0.5,scaleX:0.2974,scaleY:0.2974,x:116.6,y:185.25,alpha:0},30,cjs.Ease.quadInOut).wait(1));
+	// hmup_06
+	this.instance_6 = new lib.hmup_06();
+	this.instance_6.setTransform(844.2,186.7,0.2974,0.2974,0,0,0,0.1,0);
+	this.instance_6.alpha = 0;
+	this.instance_6._off = true;
+	this.timeline.addTween(cjs.Tween.get(this.instance_6).wait(89).to({_off:false},0).to({regX:0.2,regY:0.1,scaleX:0.7077,scaleY:0.7077,x:804.3,y:185.35,alpha:0.5},30,cjs.Ease.quadInOut).to({scaleX:1,scaleY:1,x:484.2,y:185.4,alpha:1},30,cjs.Ease.quadInOut).to({regX:0.3,scaleX:0.7077,scaleY:0.7077,x:156.65,y:185.2,alpha:0.5},30,cjs.Ease.quadInOut).wait(1));
+	// hmup_07
+	this.instance_7 = new lib.hmup_07();
+	this.instance_7.setTransform(844.15,185.35,0.2974,0.2974,0,0,0,0,0.1);
+	this.instance_7.alpha = 0;
+	this.instance_7._off = true;
+	this.timeline.addTween(cjs.Tween.get(this.instance_7).wait(119).to({_off:false},0).to({regX:0.1,regY:0.2,scaleX:0.7077,scaleY:0.7077,x:804.2,y:185.3,alpha:0.5},30,cjs.Ease.quadInOut).to({scaleX:1,scaleY:1,x:484.1,alpha:1},30,cjs.Ease.quadInOut).wait(1));
+	// phone_mock_bg
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#000000").s().p("AvOP8IAA/3IedAAIAAf3g");
+	this.shape.setTransform(483.5,186);
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(180));
 	// bg
 	this.instance_8 = new lib.hmup_bg_anim();
 	this.instance_8.setTransform(574,304.2,1,1,0,0,0,580,326.2);
@@ -1001,7 +1002,6 @@ function handleComplete(evt,comp) {
 }
 </script>
 <!-- write your code here -->
-
 
 <div class="book">
 	<div class="book__pg-shadow"></div>
@@ -1287,8 +1287,6 @@ body {
 }
 
 </style>
-
-
 
 </head>
 <body onload="init();" style="margin:0px;">
