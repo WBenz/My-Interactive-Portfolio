@@ -761,11 +761,12 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.home_trigger_btn).to({x:18.45},29,cjs.Ease.quintOut).to({x:-118.4},30,cjs.Ease.quintOut).wait(1));
 	// home_icon
 	this.instance = new lib.Interpoler49("synched",0);
+	this.instance.setTransform(0,0,1,1,180);
 	this.instance_1 = new lib.Interpoler50("synched",0);
-	this.instance_1.setTransform(136.95,-0.5);
+	this.instance_1.setTransform(136.95,-0.5,1,1,-1.4497);
 	this.instance_1._off = true;
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({_off:true,x:136.95,y:-0.5},29,cjs.Ease.quintOut).to({_off:false,x:0,y:0},30,cjs.Ease.quintOut).wait(1));
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).to({_off:false},29,cjs.Ease.quintOut).to({_off:true,x:0,y:0},30,cjs.Ease.quintOut).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({_off:true,rotation:358.5503,x:136.95,y:-0.5},29,cjs.Ease.quintOut).to({_off:false,rotation:180,x:0,y:0},30,cjs.Ease.quintOut).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).to({_off:false},29,cjs.Ease.quintOut).to({_off:true,rotation:180,x:0,y:0},30,cjs.Ease.quintOut).wait(1));
 	// home_bg
 	this.instance_2 = new lib.Interpoler47();
 	this.instance_2.setTransform(-118.1,0);
@@ -887,11 +888,12 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this.gallery_trigger_btn).to({x:16.7,y:-0.15},29,cjs.Ease.quintOut).to({x:-118.1,y:0},30,cjs.Ease.quintOut).wait(1));
 	// gallery_icon
 	this.instance = new lib.Interpoler37("synched",0);
+	this.instance.setTransform(0,0,1,1,180);
 	this.instance_1 = new lib.Interpoler38("synched",0);
-	this.instance_1.setTransform(134.95,-0.5);
+	this.instance_1.setTransform(134.95,-0.5,1,1,-2.4513);
 	this.instance_1._off = true;
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({_off:true,x:134.95,y:-0.5},29,cjs.Ease.quintOut).to({_off:false,x:0,y:0},30,cjs.Ease.quintOut).wait(1));
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).to({_off:false},29,cjs.Ease.quintOut).to({_off:true,x:0,y:0},30,cjs.Ease.quintOut).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({_off:true,rotation:357.5487,x:134.95,y:-0.5},29,cjs.Ease.quintOut).to({_off:false,rotation:180,x:0,y:0},30,cjs.Ease.quintOut).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).to({_off:false},29,cjs.Ease.quintOut).to({_off:true,rotation:180,x:0,y:0},30,cjs.Ease.quintOut).wait(1));
 	// bg
 	this.instance_2 = new lib.Interpoler39();
 	this.instance_2.setTransform(-118.1,0);
@@ -989,13 +991,13 @@ if (reversed == null) { reversed = false; }
 	new cjs.ButtonHelper(this.cv_trigger_btn, 0, 1, 1);
 	this.timeline.addTween(cjs.Tween.get(this.cv_trigger_btn).to({x:18.75,y:0},29,cjs.Ease.quintOut).to({x:-117.8,y:-0.3},30,cjs.Ease.quintOut).wait(1));
 	// cv_icon
-	this.instance = new lib.Interpoler33("synched",0);
-	this.instance.setTransform(-2.05,-0.5);
-	this.instance_1 = new lib.Interpoler34("synched",0);
-	this.instance_1.setTransform(134.95,-0.5);
+	this.instance = new lib.Interpoler34("synched",0);
+	this.instance.setTransform(-0.8,-0.5,1,1,180);
+	this.instance_1 = new lib.Interpoler33("synched",0);
+	this.instance_1.setTransform(139.45,-0.5,1,1,-1.4838);
 	this.instance_1._off = true;
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({_off:true,x:134.95},29,cjs.Ease.quintOut).to({_off:false,x:-2.05},30,cjs.Ease.quintOut).wait(1));
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).to({_off:false},29,cjs.Ease.quintOut).to({_off:true,x:-2.05},30,cjs.Ease.quintOut).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({_off:true,rotation:358.5162,x:139.45},29,cjs.Ease.quintOut).to({_off:false,rotation:180,x:-0.8},30,cjs.Ease.quintOut).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).to({_off:false},29,cjs.Ease.quintOut).to({_off:true,rotation:180,x:-0.8},30,cjs.Ease.quintOut).wait(1));
 	// bg
 	this.instance_2 = new lib.Interpoler35();
 	this.instance_2.setTransform(-118.1,0);
@@ -1287,7 +1289,6 @@ function handleComplete(evt,comp) {
 }
 </script>
 <!-- write your code here -->
-
 <div class="book">
 	<div class="book__pg-shadow"></div>
 	<div class="book__pg"></div>
