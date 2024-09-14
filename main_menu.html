@@ -58,7 +58,7 @@ lib.ssMetadata = [
 	this.initialize(img.Accueil_element_6);
 }).prototype = p = new cjs.Bitmap();
 p.nominalBounds = new cjs.Rectangle(0,0,1608,2246);
-(lib.Bitmap17 = function() {
+(lib.Bitmap17pngcopy = function() {
 	this.initialize(ss["main_menu_atlas_P_4"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
@@ -82,10 +82,6 @@ p.nominalBounds = new cjs.Rectangle(0,0,1608,2246);
 	this.initialize(ss["main_menu_atlas_P_2"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
-(lib.CV_Mockuppngcopy = function() {
-	this.initialize(img.CV_Mockuppngcopy);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,2480,3508);
 (lib.Enveloppe = function() {
 	this.initialize(img.Enveloppe);
 }).prototype = p = new cjs.Bitmap();
@@ -105,7 +101,11 @@ p.nominalBounds = new cjs.Rectangle(0,0,2000,1484);
 (lib.main_menu_pic = function() {
 	this.initialize(img.main_menu_pic);
 }).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1920,1200);// helper functions:
+p.nominalBounds = new cjs.Rectangle(0,0,1920,1200);
+(lib.Wassef_CV_FR = function() {
+	this.initialize(img.Wassef_CV_FR);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,2551,3579);// helper functions:
 function mc_symbol_clone() {
 	var clone = this._cloneProps(new this.constructor(this.mode, this.startPosition, this.loop, this.reversed));
 	clone.gotoAndStop(this.currentFrame);
@@ -695,12 +695,12 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 	// Calque_1
-	this.instance = new lib.CV_Mockuppngcopy();
-	this.instance.setTransform(-286,-404,0.2306,0.2306);
+	this.instance = new lib.Wassef_CV_FR();
+	this.instance.setTransform(-286,-405,0.2241,0.2263);
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 	this._renderFirstFrame();
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-286,-404,572,809);
+p.nominalBounds = new cjs.Rectangle(-286,-405,571.7,810);
 (lib.motivation_paper = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -712,7 +712,7 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 	// Calque_1
-	this.instance = new lib.Bitmap17();
+	this.instance = new lib.Bitmap17pngcopy();
 	this.instance.setTransform(-298,-421);
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 	// Calque_2
@@ -1052,7 +1052,7 @@ if (reversed == null) { reversed = false; }
 	this.filterCacheList.push({instance: this.instance_6, startFrame:30, endFrame:59, x:-183, y:-59, w:366, h:118});
 	this._renderFirstFrame();
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-306.8,-242.7,1605.1,1694);
+p.nominalBounds = new cjs.Rectangle(-306.8,-243.7,1605.1,1695);
 (lib.cv_scene = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -1130,11 +1130,11 @@ lib.properties = {
 	opacity: 1.00,
 	manifest: [
 		{src:"images/Accueil_element_6.png", id:"Accueil_element_6"},
-		{src:"images/CV_Mockuppngcopy.png", id:"CV_Mockuppngcopy"},
 		{src:"images/Enveloppe.png", id:"Enveloppe"},
 		{src:"images/gallerie.jpg", id:"gallerie"},
 		{src:"images/Ipad_mockup.png", id:"Ipad_mockup"},
 		{src:"images/main_menu_pic.jpg", id:"main_menu_pic"},
+		{src:"images/Wassef_CV_FR.jpg", id:"Wassef_CV_FR"},
 		{src:"images/main_menu_atlas_P_1.png", id:"main_menu_atlas_P_1"},
 		{src:"images/main_menu_atlas_P_2.png", id:"main_menu_atlas_P_2"},
 		{src:"images/main_menu_atlas_P_3.png", id:"main_menu_atlas_P_3"},
@@ -1289,6 +1289,7 @@ function handleComplete(evt,comp) {
 }
 </script>
 <!-- write your code here -->
+
 <div class="book">
 	<div class="book__pg-shadow"></div>
 	<div class="book__pg"></div>
