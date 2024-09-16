@@ -12,7 +12,34 @@
 <meta charset="UTF-8">
 <meta name="authoring-tool" content="Adobe_Animate_CC">
 <title>index</title>
+
 <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+<link rel="prerender" href="https://wbenz.github.io/Testing_mode/">
+<link rel="prerender" href="https://wbenz.github.io/My-Interactive-Portfolio/">
+<link rel="prerender" href="https://wbenz.github.io/My-Interactive-Portfolio/start_menu.html">
+<link rel="prerender" href="https://wbenz.github.io/My-Interactive-Portfolio/main_menu.html">
+<link rel="prerender" href="https://wbenz.github.io/My-Interactive-Portfolio/cv.html">
+<link rel="prerender" href="https://wbenz.github.io/My-Interactive-Portfolio/gallery_menu.html">
+<link rel="prerender" href="https://wbenz.github.io/My-Interactive-Portfolio/graphic_menu.html">
+<link rel="prerender" href="https://wbenz.github.io/My-Interactive-Portfolio/demo_reel.html">
+<link rel="prerender" href="https://wbenz.github.io/My-Interactive-Portfolio/HMUP.html">
+<link rel="prerender" href="https://wbenz.github.io/My-Interactive-Portfolio/index.html">
+<link rel="prerender" href="https://wbenz.github.io/My-Interactive-Portfolio/P. mc.html">
+<link rel="prerender" href="https://wbenz.github.io/My-Interactive-Portfolio/P. PNUD.html">
+<link rel="prerender" href="https://wbenz.github.io/My-Interactive-Portfolio/p.acuapor.html">
+<link rel="prerender" href="https://wbenz.github.io/My-Interactive-Portfolio/p.astrolabe.html">
+<link rel="prerender" href="https://wbenz.github.io/My-Interactive-Portfolio/P.FreeshProd.html">
+<link rel="prerender" href="https://wbenz.github.io/My-Interactive-Portfolio/P.Macbeth.html">
+<link rel="prerender" href="https://wbenz.github.io/My-Interactive-Portfolio/P.MediPub.html">
+<link rel="prerender" href="https://wbenz.github.io/My-Interactive-Portfolio/P.President.html">
+<link rel="prerender" href="https://wbenz.github.io/My-Interactive-Portfolio/P.RapidPoste.html">
+<link rel="prerender" href="https://wbenz.github.io/My-Interactive-Portfolio/P.Tapetum.html">
+<link rel="prerender" href="https://wbenz.github.io/My-Interactive-Portfolio/P.tibabiolabs.html">
+<link rel="prerender" href="https://wbenz.github.io/My-Interactive-Portfolio/P.Tvmix.html">
+<link rel="prerender" href="https://wbenz.github.io/My-Interactive-Portfolio/P.Webofly.html">
+<link rel="prerender" href="https://wbenz.github.io/My-Interactive-Portfolio/web_pages.html">
+
 <style>
 	@font-face
 	{
@@ -332,8 +359,13 @@ if (reversed == null) { reversed = false; }
 		this.startButton.visible = true;
 		var _this = this;
 		_this.startButton.on('click', function () {
-			window.open('start_menu.html', '_self');
-		});
+                if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)){
+                //do your stuff here
+                window.open('https://wbenz.github.io/Testing_mode/', '_self');
+                }	
+                else {
+                window.open('start_menu.html', '_self');
+		}});
 	}
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
