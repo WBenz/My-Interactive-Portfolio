@@ -157,16 +157,6 @@ if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
 			this.isSingleFrame = true;
 		}
 		document.querySelector(".loading").remove();
-		this.startButton.visible = true;
-		var _this = this;
-		_this.startButton.on('click', function () {
-			if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-				//do your stuff here
-				window.open('mobile/index.html', '_self');
-			} else {
-				window.open('start_menu.html', '_self');
-			}
-		});
 	}
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
@@ -349,7 +339,7 @@ function handleComplete(evt,comp) {
 		</div>
 	</div>
 	<div class="loading">
-		<progress class="progress" value="32" max="100"></progress>
+		<progress class="progress" value="18" max="100"></progress>
 	</div>
 </body>
 </html>
