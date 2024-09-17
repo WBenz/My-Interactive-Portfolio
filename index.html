@@ -127,85 +127,6 @@ lib.ssMetadata = [
 	this.initialize(ss["index_atlas_NP_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
-// helper functions:
-function mc_symbol_clone() {
-	var clone = this._cloneProps(new this.constructor(this.mode, this.startPosition, this.loop, this.reversed));
-	clone.gotoAndStop(this.currentFrame);
-	clone.paused = this.paused;
-	clone.framerate = this.framerate;
-	return clone;
-}
-function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
-	var prototype = cjs.extend(symbol, cjs.MovieClip);
-	prototype.clone = mc_symbol_clone;
-	prototype.nominalBounds = nominalBounds;
-	prototype.frameBounds = frameBounds;
-	return prototype;
-	}
-(lib.popup_anim = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-	// txt
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#FFFFFF").ss(1,1,1).p("At5lCIbzAAIAAKFI7zAAg");
-	this.shape.setTransform(0.525,0);
-	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#FFFFFF").s().p("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");
-	this.shape_1.setTransform(0,0.225);
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_1},{t:this.shape}]}).wait(1));
-	this._renderFirstFrame();
-}).prototype = getMCSymbolPrototype(lib.popup_anim, new cjs.Rectangle(-89.5,-33.2,180.1,66.5), null);
-(lib.Hit = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-	// Layer_1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#FF0000").s().p("EhlcAwBMAAAhgBMDK5AAAMAAABgBg");
-	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
-	this._renderFirstFrame();
-}).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-649.3,-307.3,1298.6,614.6);
-(lib.StartButton = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-	// txt
-	this.txt = new cjs.Text("START", "36px 'Arial'", "#D1D1D1");
-	this.txt.name = "txt";
-	this.txt.textAlign = "center";
-	this.txt.lineHeight = 42;
-	this.txt.lineWidth = 173;
-	this.txt.parent = this;
-	this.txt.setTransform(0,-19.85);
-	this.timeline.addTween(cjs.Tween.get(this.txt).wait(1).to({color:"#FFFFFF"},0).wait(1).to({y:-18.2,font:"33px 'Arial'",lineHeight:38.85},0).to({_off:true},1).wait(1));
-	// hit
-	this.instance = new lib.Hit("single",0);
-	this.instance.setTransform(0,0,0.1207,0.0726);
-	this.instance._off = true;
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(3).to({_off:false},0).wait(1));
-	this._renderFirstFrame();
-}).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-88.7,-22.3,177.5,44.7);
 // stage content:
 (lib.Index = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
@@ -249,21 +170,10 @@ if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
 	}
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
-	// start_txt
-	this.startButton = new lib.StartButton();
-	this.startButton.name = "startButton";
-	this.startButton.setTransform(480,270);
-	this.startButton.visible = false;
-	new cjs.ButtonHelper(this.startButton, 0, 1, 2, false, new lib.StartButton(), 3);
-	this.timeline.addTween(cjs.Tween.get(this.startButton).wait(1));
-	// popup
-	this.instance = new lib.popup_anim();
-	this.instance.setTransform(480,352.1,1,1,0,0,0,0.5,0);
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 	// BG
-	this.instance_1 = new lib.bodyground();
-	this.instance_1.setTransform(-14,-228);
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1));
+	this.instance = new lib.bodyground();
+	this.instance.setTransform(-14,-228);
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 	this._renderFirstFrame();
 }).prototype = p = new lib.AnMovieClip();
 p.nominalBounds = new cjs.Rectangle(466,42,507,726);
@@ -276,7 +186,7 @@ lib.properties = {
 	color: "#333333",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/index_atlas_NP_1.jpg?1726580675307", id:"index_atlas_NP_1"}
+		{src:"images/index_atlas_NP_1.jpg?1726594712362", id:"index_atlas_NP_1"}
 	],
 	preloads: []
 };
@@ -417,8 +327,7 @@ function handleComplete(evt,comp) {
 		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
 	}
 	exportRoot = new lib.Index();
-	stage = new lib.Stage(canvas);
-	stage.enableMouseOver();	
+	stage = new lib.Stage(canvas);	
 	//Registers the "tick" event listener.
 	fnStartAnimation = function() {
 		stage.addChild(exportRoot);
