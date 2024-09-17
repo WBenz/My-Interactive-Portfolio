@@ -155,21 +155,6 @@ lib.ssMetadata = [
 	this.initialize(ss["index_atlas_NP_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
-// helper functions:
-function mc_symbol_clone() {
-	var clone = this._cloneProps(new this.constructor(this.mode, this.startPosition, this.loop, this.reversed));
-	clone.gotoAndStop(this.currentFrame);
-	clone.paused = this.paused;
-	clone.framerate = this.framerate;
-	return clone;
-}
-function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
-	var prototype = cjs.extend(symbol, cjs.MovieClip);
-	prototype.clone = mc_symbol_clone;
-	prototype.nominalBounds = nominalBounds;
-	prototype.frameBounds = frameBounds;
-	return prototype;
-	}
 (lib.Interpoler4 = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -223,23 +208,6 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(-649.3,-307.3,1298.6,614.6);
-(lib.full_bg = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-	// Calque_1
-	this.instance = new lib.bodyground();
-	this.instance.setTransform(987,0);
-	this.instance_1 = new lib.bodyground();
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).wait(1));
-	this._renderFirstFrame();
-}).prototype = getMCSymbolPrototype(lib.full_bg, new cjs.Rectangle(0,0,1974,996), null);
 (lib.StartButton = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -317,23 +285,6 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(-115,-42.5,231.1,85);
-(lib.index_bg = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-	// Calque_1
-	this.instance = new lib.full_bg();
-	this.instance.setTransform(1001,498,1,1,0,0,0,987,498);
-	this.timeline.addTween(cjs.Tween.get(this.instance).to({x:15},499).wait(1));
-	this._renderFirstFrame();
-}).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-972,0,2960,996);
 // stage content:
 (lib.Index = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
@@ -380,13 +331,13 @@ if (reversed == null) { reversed = false; }
 	this.instance = new lib.popup_anim();
 	this.instance.setTransform(480,352.1,1,1,0,0,0,0.5,0);
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
-	// bg
-	this.instance_1 = new lib.index_bg();
-	this.instance_1.setTransform(973,270,1,1,0,0,0,987,498);
+	// BG
+	this.instance_1 = new lib.bodyground();
+	this.instance_1.setTransform(-14,-228);
 	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1));
 	this._renderFirstFrame();
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(480,42,1494,726);
+p.nominalBounds = new cjs.Rectangle(466,42,507,726);
 // library properties:
 lib.properties = {
 	id: '402608EF3A50094E910005AF11DE6713',
