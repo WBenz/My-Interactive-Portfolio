@@ -1,0 +1,412 @@
+<manifest alg="2" build="2018.1.1.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="wbenz.com" resolutions="1x" timestamp="1700054400097">
+  <folder name="css">
+    <file name="site_global.css" crc="8089578"/>
+    <file name="index.css" crc="3873804300" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="phone>index:tablet>index:index"/>
+    <file name="museutils.js" crc="3939489907" ref="phone>index:tablet>index:index"/>
+    <file name="whatinput.js" crc="86476730" ref="phone>index:tablet>index:index"/>
+    <file name="museconfig.js" crc="128606099" ref="phone>index:tablet>index:index"/>
+    <file name="jquery.watch.js" crc="522499760" ref="phone>index:tablet>index:index"/>
+    <file name="require.js" crc="4177726516" ref="phone>index:tablet>index:index"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="85124417" ref="index"/>
+    <file name="webpro.js" crc="3856315280" ref="index"/>
+    <file name="musewpslideshow.js" crc="244150766" ref="index"/>
+    <file name="jquery.museoverlay.js" crc="3877667098" ref="index"/>
+    <file name="touchswipe.js" crc="3888935200" ref="index"/>
+    <file name="musewpdisclosure.js" crc="4294234138" ref="index"/>
+    <file name="jquery.musemenu.js" crc="4139692962" ref="index"/>
+    <file name="form_check.php" crc="4108222811" ref="index"/>
+    <file name="form_throttle.php" crc="503802655" ref="index"/>
+    <file name="form_process.php" crc="260214869" ref="index"/>
+    <file name="form-u888.php" crc="481366663" ref="index"/>
+    <file name="jquery.scrolleffects.js" crc="312044820" ref="index"/>
+    <file name="html5shiv.js" crc="4241844378" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="testimonials.png" crc="4083760234" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="placeholder_small-u4166-fr.jpg" crc="281523843" ref="index"/>
+    <file name="placeholder-u2553-fr.jpg" crc="332349604" ref="index"/>
+    <file name="question_normal.png" crc="3959076316" ref="index">
+      <caption webpage="index" alt="UT EGET FELIS"/>
+      <caption webpage="index" alt="UT EGET FELIS"/>
+      <caption webpage="index" alt="UT EGET FELIS"/>
+      <caption webpage="index" alt="MAURIS SIT AMET"/>
+      <caption webpage="index" alt="MAURIS SIT AMET"/>
+      <caption webpage="index" alt="MAURIS SIT AMET"/>
+      <caption webpage="index" alt="MAURIS SIT AMET2"/>
+      <caption webpage="index" alt="MAURIS SIT AMET2"/>
+      <caption webpage="index" alt="MAURIS SIT AMET2"/>
+      <caption webpage="index" alt="LOREM IPSUM"/>
+      <caption webpage="index" alt="LOREM IPSUM"/>
+      <caption webpage="index" alt="LOREM IPSUM"/>
+    </file>
+    <file name="question.jpg" crc="3802219672" ref="index">
+      <caption webpage="index" alt="UT EGET FELIS"/>
+      <caption webpage="index" alt="MAURIS SIT AMET"/>
+      <caption webpage="index" alt="MAURIS SIT AMET2"/>
+      <caption webpage="index" alt="LOREM IPSUM"/>
+    </file>
+    <file name="checkbox.png" crc="4258989587" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="placeholder.jpg" crc="356454477" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="placeholder_small.jpg" crc="481021176" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="placeholder-u107-fr.jpg" crc="3851787693" ref="index"/>
+    <file name="acuaporbg.jpg" crc="4151065080" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="blank.gif" crc="4208392903" ref="index"/>
+    <file name="macbethbg.jpg" crc="3881881727" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="webofly_bg.jpg" crc="4073891043" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="loading.gif" crc="3815509949" ref="index"/>
+    <file name="orange-bg.png" crc="4194313429" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="_1.jpg" crc="4180766494" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="_2.jpg" crc="470926696" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="_4.jpg" crc="82698575" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="_5.jpg" crc="234133304" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="_6.png" crc="3852154600" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="_7.jpg" crc="3795744752" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="_8.jpg" crc="4025937596" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="acuaporpantslabel.jpg" crc="272795777" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="acuaporpulle.jpg" crc="4200229388" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="acuaporshirtlabel.jpg" crc="4125229087" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="acuaporshirtlogo.jpg" crc="3973119653" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="acuaporshirtp1.jpg" crc="3777583031" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="acuaporshirtp2.jpg" crc="374195053" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="acuaportop.jpg" crc="162601506" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="astrolabe02.jpg" crc="4011492912" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="astrolabe03.jpg" crc="4293960479" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="astrolabe04.jpg" crc="298019261" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="astrolabe05.png" crc="61448220" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="astrolabe06.jpg" crc="352224474" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="astrolabelogo.jpg" crc="3890113220" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="affichemandella.jpg" crc="426394338" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="badgetipitumhorizontal.jpg" crc="3844683825" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="tapetumbg.jpg" crc="411145008" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="tapitumaffiche.jpg" crc="347343620" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="tapitumaffichemonalisa.jpg" crc="379118696" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="cartevisitefreeshprod.jpg" crc="443921161" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="cataloguemimorectofinal2copie.jpg" crc="4061627443" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="cataloguemimorectofinal3copie.jpg" crc="3786267816" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="cataloguemimoversofinal2copie.jpg" crc="314575210" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="damesoussoldvdcover2.jpg" crc="3824740074" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="dvdcouverture2copie.jpg" crc="4016755581" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="freeshbg.jpg" crc="3987910599" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="freeshbrochure1-crop-u11927.jpg" crc="317837503" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="freeshbrochure3.jpg" crc="3760751430" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="freeshprodcartevisite2.jpg" crc="3961935170" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="freeshprodhat2.jpg" crc="431057368" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="freeshprodhat3.jpg" crc="3812211332" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="freeshprodpapiterie.jpg" crc="4279382463" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="image.jpg" crc="505966719" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="image_1.jpg" crc="417706586" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="image_2.jpg" crc="122581290" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="postebg.jpg" crc="4191140200" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="astrolabe01.png" crc="4245699350" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="pnudmagazinecouverture-crop-u12753.jpg" crc="3918490190" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="japanexpoflyer.jpg" crc="3945821781" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="japanexpoflyerinsidejpgcopy.jpg" crc="170857937" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="japanexpoinvitation.jpg" crc="75830449" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="préposition5.jpg" crc="3825170646" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="préposition7.jpg" crc="4016108370" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="préposition8.jpg" crc="4069868912" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="préposition17.jpg" crc="3977584004" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="préposition18japonais.jpg" crc="3769249172" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="macbethaffiche2copie.jpg" crc="298801411" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="macbethaffichecopie.jpg" crc="4238272663" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="macbethbilletcopie.jpg" crc="4053006788" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="macbethinvitationcopie.jpg" crc="4171780786" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="insertionpresstvmixcopie.jpg" crc="423656166" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="tvmixafficheverticalcopie.jpg" crc="200858113" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="tvmixcartevisitecopie.jpg" crc="3780035463" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="tvmixcouverturecopie.jpg" crc="3964093777" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="tvmixcouvetpage1copie.jpg" crc="196916646" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="tvmixcuplogocopie.jpg" crc="3893595649" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="tvmixinsertionpresscopie.jpg" crc="238629489" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="tvmixlogoincrustationwallcopie.jpg" crc="3956766230" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="tvmixlogopagecopie.jpg" crc="88210903" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="tvmixnewpapercopie.jpg" crc="4219993686" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="tvmixoutdooraffichecopie.jpg" crc="269858554" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="tvmixpullecopie.jpg" crc="9922957" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="weboflyaffiche02.jpg" crc="347670543" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="weboflybrochurecouv.jpg" crc="496038432" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="weboflybrochurecouvback.jpg" crc="4282496874" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="weboflybrochureinside.jpg" crc="4034122794" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="weboflyflyera5.jpg" crc="122225802" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="tibabio01copie.jpg" crc="419341714" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="tibabio02copie.jpg" crc="4213612978" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="tibabio03copie.jpg" crc="3904678798" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="tibabio04copie.jpg" crc="439245544" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="tibabio05copie.jpg" crc="3845116719" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="tibabio06copie.jpg" crc="4117828939" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="tibabio07copie.jpg" crc="3786624" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="tibabio08copie.jpg" crc="3815315961" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="president06copie.jpg" crc="3849130234" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="president07copie.jpg" crc="29398291" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="president08copie.jpg" crc="3861601707" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="weboflyaffiche022.jpg" crc="206366044" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="resicover07.jpg" crc="515869199" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="resicover07copie.jpg" crc="3893768757" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="resicover07copie5.jpg" crc="216354600" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="resicover08.jpg" crc="143382288" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="resicover011.jpg" crc="3769760570" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="resicover022.jpg" crc="4075531397" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="resicover033.jpg" crc="3852121951" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="resicover066.jpg" crc="272024331" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="macbethaffiche-crop-u16155.png" crc="510186071" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="_6-u9965-fr.png" crc="11228133" ref="index"/>
+    <file name="acuaporpantslabel-u9966-fr.jpg" crc="227137480" ref="index"/>
+    <file name="astrolabe05-u9964-fr.png" crc="3842903657" ref="index"/>
+    <file name="tapetumbg-u11166-fr.jpg" crc="4255527275" ref="index"/>
+    <file name="freeshbg-u11541-fr.jpg" crc="4181995362" ref="index"/>
+    <file name="postebg-u12228-fr.jpg" crc="528448633" ref="index"/>
+    <file name="astrolabe01-u12564-fr.png" crc="157946526" ref="index"/>
+    <file name="freeshbg2.jpg" crc="129888295" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="macbethbg-u13314-fr.jpg" crc="3839608894" ref="index"/>
+    <file name="tvmixlogoincrustationwallcopie-u13650-fr.jpg" crc="3811672988" ref="index"/>
+    <file name="weboflyaffiche02-u14298-fr.jpg" crc="140100016" ref="index"/>
+    <file name="tibabio06copie-u14673-fr.jpg" crc="4216947025" ref="index"/>
+    <file name="president06copie-u15165-fr.jpg" crc="201053039" ref="index"/>
+    <file name="resicover07-u15501-fr.jpg" crc="4264406603" ref="index"/>
+    <file name="macbethaffiche-u15993-fr.png" crc="3843509661" ref="index"/>
+    <file name="purple-bg.png" crc="4028653270" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="heart_icon.png" crc="233067463" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+  </folder>
+  <folder name="tablet">
+    <folder name="css">
+      <file name="index.css" crc="4046498137" ref="tablet>index"/>
+    </folder>
+    <file name="index.html" crc="440964909" seo="true" mt="1407282716505" redirect="false"/>
+  </folder>
+  <folder name="phone">
+    <folder name="css">
+      <file name="index.css" crc="263663261" ref="phone>index"/>
+    </folder>
+    <file name="index.html" crc="3862515289" seo="true" mt="1407282697538" redirect="false"/>
+  </folder>
+  <file name="index.html" crc="450862885" seo="true" mt="1700054203749" redirect="true"/>
+</manifest>
