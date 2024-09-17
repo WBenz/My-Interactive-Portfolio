@@ -221,6 +221,14 @@ if (reversed == null) { reversed = false; }
 	this.isSingleFrame = false;
 	// timeline functions:
 	this.frame_0 = function() {
+
+if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+				//do your stuff here
+				window.open('mobile/index.html', '_self');
+			} else {
+				window.open('start_menu.html', '_self');
+			}
+
 		if(this.isSingleFrame) {
 			return;
 		}
