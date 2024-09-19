@@ -1,12 +1,16 @@
 <!DOCTYPE html>
+<!--
+	NOTES:
+	1. All tokens are represented by '$' sign in the template.
+	2. You can write your code only wherever mentioned.
+	3. All occurrences of existing tokens will be replaced by their appropriate values.
+	4. Blank lines will be removed automatically.
+	5. Remove unnecessary comments before creating your template.
+-->
 <html>
-
 <head>
-    <!-- Standard Meta -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-
+<meta charset="UTF-8">
+<meta name="authoring-tool" content="Adobe_Animate_CC">
 
 <link rel="prerender" href="start_menu.html">
 <link rel="prerender" href="cv.html">
@@ -36,22 +40,137 @@
 <link rel="prerender" href="mobile/">
 <link rel="prerender" href="videos/">
 
-    <!-- Site Properties -->
-    <title>Loader</title>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
-</head>
-
-<body>
-    <!-- loader -->
-    <div class="ui dimmer" id="dimmer">
-        <div class="ui massive text loader">
-            <h3>Loading</h3>
-        </div>
-    </div>
-
+<title>index</title>
+<style>
+	@font-face
+	{
+	    font-family: 'Passion One Regular';
+	    src: url("PassionOne-Regular.ttf");
+		font-display: swap;
+	}
+	:root
+	{
+		--dark-grey: #1C1C1C; /* The background color. It should be the same one used for the stage */
+	}
+	/* LOADER THIRD PARTY CODE START  */
+	.loading
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: absolute;
+		top: calc(50% - 50px);
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.loading img
+	{
+		transform: scale(0.5);
+	}
+	.progress
+	{
+		position: relative;
+		width: 160px;
+		height: 24px;
+		border: 1px solid white;
+		background-color: transparent;
+		border-radius: 12px;
+	}
+    progress::-moz-progress-bar
+    {      
+        border: 1px solid white;
+		background-color: transparent;
+		border-radius: 12px;
+    }
+    progress::-webkit-progress-bar
+    {
+        border: 1px solid white;
+		background-color: transparent;
+		border-radius: 12px;
+    }
+    progress::-webkit-progress-value
+    {
+        border: none;
+        background-color: white;
+		border-radius: 12px;
+    }
+    progress::-webkit-progress-value
+    {
+        border: none;
+        background-color: white;
+		border-radius: 12px;
+    }
+	progress:after
+	{
+		position: absolute;
+  		content: attr(value)'%';
+		color: white;
+		top: 30px;
+		left: 50%;
+		transform: translateX(-50%);
+		font-family: "Passion One Regular", sans-serif;
+		font-weight: bold;
+		font-size: 1.5rem;
+		letter-spacing: 3px;
+	}
+	/* LOADER THIRD PARTY CODE END  */
+</style>
+<!-- write your code here -->
+<style>
+  body {
+	overflow:hidden;
+  }
+  #animation_container {
+	position:absolute;
+	margin:auto;
+	left:-100%;right:-100%;
+	top:-100%;bottom:-100%;
+  }
+</style>
+<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
 <script>
+(function (cjs, an) {
+var p; // shortcut to reference prototypes
+var lib={};var ss={};var img={};
+lib.ssMetadata = [
+		{name:"index_atlas_NP_1", frames: [[0,0,987,996]]}
+];
+(lib.AnMovieClip = function(){
+	this.actionFrames = [];
+	this.ignorePause = false;
+	this.gotoAndPlay = function(positionOrLabel){
+		cjs.MovieClip.prototype.gotoAndPlay.call(this,positionOrLabel);
+	}
+	this.play = function(){
+		cjs.MovieClip.prototype.play.call(this);
+	}
+	this.gotoAndStop = function(positionOrLabel){
+		cjs.MovieClip.prototype.gotoAndStop.call(this,positionOrLabel);
+	}
+	this.stop = function(){
+		cjs.MovieClip.prototype.stop.call(this);
+	}
+}).prototype = p = new cjs.MovieClip();
+// symbols:
+(lib.bodyground = function() {
+	this.initialize(ss["index_atlas_NP_1"]);
+	this.gotoAndStop(0);
+}).prototype = p = new cjs.Sprite();
+// stage content:
+(lib.Index = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+	this.actionFrames = [0];
+	this.isSingleFrame = false;
+	// timeline functions:
+	this.frame_0 = function() {
 
 if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
 				//do your stuff here
@@ -60,13 +179,196 @@ if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
 				window.open('start_menu.html', '_self');
 			}
 
-
-// ** Loader ON
-$('#dimmer').dimmer('show');
-
-// ** Loader OFF
-// $('#dimmer').dimmer('hode');
-
+		if(this.isSingleFrame) {
+			return;
+		}
+		if(this.totalFrames == 1) {
+			this.isSingleFrame = true;
+		}
+		document.querySelector(".loading").remove();
+	}
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(1));
+	// BG
+	this.instance = new lib.bodyground();
+	this.instance.setTransform(-14,-228);
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
+	this._renderFirstFrame();
+}).prototype = p = new lib.AnMovieClip();
+p.nominalBounds = new cjs.Rectangle(466,42,507,726);
+// library properties:
+lib.properties = {
+	id: '402608EF3A50094E910005AF11DE6713',
+	width: 960,
+	height: 540,
+	fps: 60,
+	color: "#333333",
+	opacity: 1.00,
+	manifest: [
+		{src:"images/index_atlas_NP_1.jpg", id:"index_atlas_NP_1"}
+	],
+	preloads: []
+};
+// bootstrap callback support:
+(lib.Stage = function(canvas) {
+	createjs.Stage.call(this, canvas);
+}).prototype = p = new createjs.Stage();
+p.setAutoPlay = function(autoPlay) {
+	this.tickEnabled = autoPlay;
+}
+p.play = function() { this.tickEnabled = true; this.getChildAt(0).gotoAndPlay(this.getTimelinePosition()) }
+p.stop = function(ms) { if(ms) this.seek(ms); this.tickEnabled = false; }
+p.seek = function(ms) { this.tickEnabled = true; this.getChildAt(0).gotoAndStop(lib.properties.fps * ms / 1000); }
+p.getDuration = function() { return this.getChildAt(0).totalFrames / lib.properties.fps * 1000; }
+p.getTimelinePosition = function() { return this.getChildAt(0).currentFrame / lib.properties.fps * 1000; }
+an.bootcompsLoaded = an.bootcompsLoaded || [];
+if(!an.bootstrapListeners) {
+	an.bootstrapListeners=[];
+}
+an.bootstrapCallback=function(fnCallback) {
+	an.bootstrapListeners.push(fnCallback);
+	if(an.bootcompsLoaded.length > 0) {
+		for(var i=0; i<an.bootcompsLoaded.length; ++i) {
+			fnCallback(an.bootcompsLoaded[i]);
+		}
+	}
+};
+an.compositions = an.compositions || {};
+an.compositions['402608EF3A50094E910005AF11DE6713'] = {
+	getStage: function() { return exportRoot.stage; },
+	getLibrary: function() { return lib; },
+	getSpriteSheet: function() { return ss; },
+	getImages: function() { return img; }
+};
+an.compositionLoaded = function(id) {
+	an.bootcompsLoaded.push(id);
+	for(var j=0; j<an.bootstrapListeners.length; j++) {
+		an.bootstrapListeners[j](id);
+	}
+}
+an.getComposition = function(id) {
+	return an.compositions[id];
+}
+an.makeResponsive = function(isResp, respDim, isScale, scaleType, domContainers) {		
+	var lastW, lastH, lastS=1;		
+	window.addEventListener('resize', resizeCanvas);		
+	resizeCanvas();		
+	function resizeCanvas() {			
+		var w = lib.properties.width, h = lib.properties.height;			
+		var iw = window.innerWidth, ih=window.innerHeight;			
+		var pRatio = window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1;			
+		if(isResp) {                
+			if((respDim=='width'&&lastW==iw) || (respDim=='height'&&lastH==ih)) {                    
+				sRatio = lastS;                
+			}				
+			else if(!isScale) {					
+				if(iw<w || ih<h)						
+					sRatio = Math.min(xRatio, yRatio);				
+			}				
+			else if(scaleType==1) {					
+				sRatio = Math.min(xRatio, yRatio);				
+			}				
+			else if(scaleType==2) {					
+				sRatio = Math.max(xRatio, yRatio);				
+			}			
+		}
+		domContainers[0].width = w * pRatio * sRatio;			
+		domContainers[0].height = h * pRatio * sRatio;
+		domContainers.forEach(function(container) {				
+			container.style.width = w * sRatio + 'px';				
+			container.style.height = h * sRatio + 'px';			
+		});
+		stage.scaleX = pRatio*sRatio;			
+		stage.scaleY = pRatio*sRatio;
+		lastW = iw; lastH = ih; lastS = sRatio;            
+		stage.tickOnUpdate = false;            
+		stage.update();            
+		stage.tickOnUpdate = true;		
+	}
+}
+an.handleSoundStreamOnTick = function(event) {
+	if(!event.paused){
+		var stageChild = stage.getChildAt(0);
+		if(!stageChild.paused || stageChild.ignorePause){
+			stageChild.syncStreamSounds();
+		}
+	}
+}
+an.handleFilterCache = function(event) {
+	if(!event.paused){
+		var target = event.target;
+		if(target){
+			if(target.filterCacheList){
+				for(var index = 0; index < target.filterCacheList.length ; index++){
+					var cacheInst = target.filterCacheList[index];
+					if((cacheInst.startFrame <= target.currentFrame) && (target.currentFrame <= cacheInst.endFrame)){
+						cacheInst.instance.cache(cacheInst.x, cacheInst.y, cacheInst.w, cacheInst.h);
+					}
+				}
+			}
+		}
+	}
+}
+})(createjs = createjs||{}, AdobeAn = AdobeAn||{});
+var createjs, AdobeAn;
 </script>
+<script type='text/javascript' src='libs/learning.js'></script>
+<script>
+var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+function init() {
+	canvas = document.getElementById("canvas");
+	anim_container = document.getElementById("animation_container");
+	dom_overlay_container = document.getElementById("dom_overlay_container");
+	var comp=AdobeAn.getComposition("402608EF3A50094E910005AF11DE6713");
+	var lib=comp.getLibrary();
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
+	loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
+	var lib=comp.getLibrary();
+	loader.loadManifest(lib.properties.manifest);
+	var progressBar = document.querySelector(".progress");
+	loader.addEventListener("progress", function(evt)
+	{
+		progressBar.value = Math.round(evt.progress * 100);
+	});
+}
+function handleFileLoad(evt, comp) {
+	var images=comp.getImages();	
+	if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
+}
+function handleComplete(evt,comp) {
+	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+	var lib=comp.getLibrary();
+	var ss=comp.getSpriteSheet();
+	var queue = evt.target;
+	var ssMetadata = lib.ssMetadata;
+	for(i=0; i<ssMetadata.length; i++) {
+		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+	}
+	exportRoot = new lib.Index();
+	stage = new lib.Stage(canvas);	
+	//Registers the "tick" event listener.
+	fnStartAnimation = function() {
+		stage.addChild(exportRoot);
+		createjs.Ticker.framerate = lib.properties.fps;
+		createjs.Ticker.addEventListener("tick", stage);
+	}	    
+	//Code to support hidpi screens and responsive scaling.
+	AdobeAn.makeResponsive(true,'both',true,2,[canvas,anim_container,dom_overlay_container]);	
+	AdobeAn.compositionLoaded(lib.properties.id);
+	fnStartAnimation();
+}
+</script>
+<!-- write your code here -->
+</head>
+<body onload="init();" style="margin:0px; background-color: var(--dark-grey);">
+	<div id="animation_container" style="background-color: var(--dark-grey); width:960px; height:540px">
+		<canvas id="canvas" width="960" height="540" style="position: absolute; display: block; background-color: var(--dark-grey);"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:960px; height:540px; position: absolute; left: 0px; top: 0px; display: block;">
+		</div>
+	</div>
+	<div class="loading">
+		<progress class="progress" value="32" max="100"></progress>
+	</div>
 </body>
 </html>
